@@ -3,26 +3,24 @@
   padding: 0px;
   margin: 0px;
   font-family: Bogart-med;
-  
 }
 #postion {
   position: sticky;
   top: 0;
 }
 .home {
- 
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   padding: 20px;
-  background-color: #E3E6E6;
+  width: 100%;
+  background-color: #e3e6e6;
 
   gap: 10px;
 }
 .home .mobileproduct .innerbox {
-
   height: 100%;
- 
+
   width: 350px;
 }
 .home .mobileproduct {
@@ -34,6 +32,9 @@
   min-width: auto;
 }
 
+.home .mobileproduct .innerbox div img {
+  width: 60%;
+}
 
 .home .mobileproduct .innerbox button {
   width: 150px;
@@ -41,6 +42,7 @@
   border-radius: 10px;
   color: white;
   height: 30px;
+  margin-bottom: 10px;
 }
 footer {
   display: flex;
@@ -107,18 +109,16 @@ footer div ul a {
   width: 340px;
   text-align: center;
 }
-.mobileproductdetail .innerbox img {
 
-}
 .mobileproductdetail .innerbox button {
   background-color: orange;
   color: white;
   border-radius: 10px;
   width: 200px;
 }
-
-
-
+.mobileproduct .innerbox div .image99 {
+  width: 100%;
+}
 .navbar-expand-lg .navbar-nav .nav-link {
   padding-right: var(--bs-navbar-nav-link-padding-x);
   padding-left: var(--bs-navbar-nav-link-padding-x);
@@ -126,19 +126,6 @@ footer div ul a {
   font-weight: bolder;
   color: black;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .slider {
   margin: 0 20px;
@@ -163,55 +150,47 @@ footer div ul a {
   background: rgb(255, 68, 68) !important;
 }
 
+.parent {
+  background-color: #e3e6e6;
 
-.parent
-{
-background-color: #E3E6E6;
-  
-  
   padding: 20px;
 }
 
 .parent .slider img {
- 
- 
- 
-
   height: 200px;
-  width: 100%;
+  width: 80%;
 }
 .parent .slider {
- 
+  height: 471px;
   background-color: white;
- 
- text-align: center;
+
+  text-align: center;
 }
-.parent .slider  button {
+.parent .slider button {
   background-color: orange;
   color: white;
   border-radius: 10px;
   width: 50%;
-
- 
 }
 
-
-
-
-@media screen and (max-width: 650px)and (min-width: 300px) {
+@media screen and (max-width: 650px) and (min-width: 300px) {
   #carouselExampleAutoplaying .carousel-inner .carousel-item img {
     height: 300px;
   }
   .home .mobileproduct .innerbox {
     width: 280px;
   }
-  .home .mobileproduct .innerbox div img {
-    width: 100%;
-  }
-  .productdetail .detail{
-    width: 100%;
-  }
- 
- 
-}
 
+  .productdetail .detail {
+    width: 100%;
+  }
+
+  .ads {
+    height: 100px;
+  }
+
+  .home .mobileproduct {
+    max-width: 300px;
+    min-width: auto;
+  }
+}

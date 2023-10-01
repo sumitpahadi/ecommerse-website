@@ -4,7 +4,7 @@ import React from "react";
 import { useContext } from "react";
 import { Contextdata } from "../data/Api";
 import Mutlislder from "../Multislider/Mutlislder";
-import Slider from '../Slider/Slider'
+import Slider from "../Slider/Slider";
 import { Link } from "react-router-dom";
 import "../App.css";
 
@@ -13,7 +13,7 @@ function Laptop() {
 
   return (
     <div>
-          <Slider
+      <Slider
         image1={
           "https://images-eu.ssl-images-amazon.com/images/G/31/img22/Wireless/devjyoti/Jupiter23/OPPO/Uber/V1/D98467701_PC_Hero_3000x1200._CB577020453_.jpg"
         }
@@ -32,7 +32,12 @@ function Laptop() {
               <div className="mobileproduct" key={index} id="productsub">
                 <div className="innerbox">
                   <div>
-                    <img src={item.Image} alt="" height={"200px"} />
+                    <img
+                      src={item.Image}
+                      alt=""
+                      height={"200px"}
+                      className={`image${item.ID}`}
+                    />
                   </div>
                   <h5>Brand Name :{item.Name}</h5>
                   <p>Brand Rating :{item.Rating}</p>
@@ -48,7 +53,13 @@ function Laptop() {
       </div>
       <br />
       <div>
-        <img src="https://rukminim2.flixcart.com/fk-p-flap/2000/2000/image/1d2a222a9659fa9d.jpg?q=50" alt="" height={"300px"} width={"100%"} />
+        <img
+          src="https://rukminim2.flixcart.com/fk-p-flap/2000/2000/image/1d2a222a9659fa9d.jpg?q=50"
+          alt=""
+          height={"300px"}
+          width={"100%"}
+          className="ads"
+        />
       </div>
       <br />
       <Mutlislder id={88} />
