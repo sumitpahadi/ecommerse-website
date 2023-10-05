@@ -25,6 +25,7 @@ function Product() {
           name: item.Name,
           image: item.Image,
           quantity:item.quantity,
+          price:item.Saleprice,
         })
       );
     }

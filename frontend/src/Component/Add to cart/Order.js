@@ -1,6 +1,6 @@
+import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { increment, decrement } from "../Createslice/Slice";
-import { removeItem } from "../Createslice/Slice";
+import { increment, decrement, removeItem } from "../Createslice/Slice";
 
 function Order() {
   const select = useSelector((state) => state.cart.data);
@@ -10,7 +10,8 @@ function Order() {
     dispatch(increment(index));
     console.log(index);
   };
-  const handledecerment = (index, num) => {
+
+  const handleDecrement = (index, num) => {
     if (num === 1) {
       dispatch(removeItem(index));
     }
@@ -18,17 +19,25 @@ function Order() {
     console.log(index);
   };
 
-  const handleremove = (index) => {
+  const handleRemove = (index) => {
     console.log("Removing item with id:", index);
     dispatch(removeItem(index));
   };
 
+  const pricecal = (item) => {
+    const cleanedPrice = item.replace(/\s/g, "").replace(/[^\d]/g, "");
+    const price = parseInt(cleanedPrice, 10);
+    return price;
+  };
+
+  const totalAmount = select.reduce((total, item) => total + pricecal(item.price) * item.quantity, 0);
+
   return (
     <div className="parent-cont">
-      {select &&
-        select.map((item, index) => {
-          return (
-            <div key={index} className="child-cont">
+      <div className="child-cont">
+        {select && select.length > 0 ? (
+          select.map((item, index) => (
+            <div key={index} className="container">
               <div className="first-cont">
                 <img src={item.image} alt="click here" height={"200px"} />
               </div>
@@ -38,7 +47,7 @@ function Order() {
                 <div>
                   <button
                     className="button"
-                    onClick={() => handledecerment(item.id, item.quantity)}
+                    onClick={() => handleDecrement(item.id, item.quantity)}
                   >
                     -
                   </button>
@@ -51,12 +60,37 @@ function Order() {
                   </button>
                 </div>
                 <div className="remove">
-                  <button onClick={() => handleremove(item.id)}>Remove</button>
+                  <button onClick={() => handleRemove(item.id)}>Remove</button>
                 </div>
               </div>
             </div>
-          );
-        })}
+          ))
+        ) : (
+          <div className="no-items-message"><p>No Item in Cart</p></div>
+        )}
+      </div>
+      {select.length > 0 && (
+        <div className="amount">
+          <table>
+            <tbody>
+              <tr>
+                <th>Item</th>
+                <th>Price</th>
+              </tr>
+              {select.map((item, index) => (
+                <tr key={index}>
+                  <td><b>Brand  :   </b>{item.name.slice(0, 8)}...</td>
+                  <td>₹{pricecal(item.price)}</td>
+                </tr>
+              ))}
+              <tr>
+                <td>Total Amount</td>
+                <td> ₹{totalAmount}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      )}
     </div>
   );
 }
