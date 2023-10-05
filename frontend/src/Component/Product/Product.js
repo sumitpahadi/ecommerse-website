@@ -3,14 +3,32 @@ import { useParams } from "react-router-dom";
 import { Contextdata } from "../data/Api";
 import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
+import {addtocart} from "../Createslice/Slice";
 
 import "../App.css";
 import Mutlislder from "../Multislider/Mutlislder";
 
 function Product() {
+  const dispatch = useDispatch();
+  const selelct = useSelector((state) => state.cart.data);
   const data = useContext(Contextdata);
-  const name = useParams();
+  console.log(selelct)
+
   const { id } = useParams();
+
+  const handleClick = (item) => {
+    if (item) {
+      dispatch(
+        addtocart({
+          id: item.ID,
+          name: item.Name,
+          image: item.Image,
+          quantity:item.quantity,
+        })
+      );
+    }
+  };
 
   return (
     <>
@@ -18,6 +36,7 @@ function Product() {
         {data
           .filter((item) => item.ID === parseInt(id))
           .map((item, index) => (
+            
             <div key={index} className="productdetail">
               <div className="productimage">
                 <img src={item.Image} alt="click here" height={"300px"} />
@@ -35,7 +54,9 @@ function Product() {
                   <li>{item.Availabeoffer3}</li>
                   <li>{item.Availabeoffer3}</li>
                 </ul>
-                <button>Add To Cart</button>
+                <Link onClick={() => handleClick(item)}>
+                  <button>Add To Cart</button>
+                </Link>{" "}
               </div>
             </div>
           ))}

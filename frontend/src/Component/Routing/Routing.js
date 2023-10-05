@@ -7,6 +7,7 @@ import Mobile from "../pages/Mobile";
 import Tablet from "../pages/Tablet";
 import Api from "../data/Api";
 import Product from "../Product/Product";
+import Order from "../Add to cart/Order";
 
 function Routing() {
   return (
@@ -19,6 +20,7 @@ function Routing() {
           <Route path="/tablet" element={<Tablet />} />
           <Route path="/accessories" element={<Accessories />} />
           <Route path="/product/:id/:name" element ={<Product/>}/>
+          <Route path="/order" element ={<Order/>}/>
           <Route />
       </Routes>
         </Api>

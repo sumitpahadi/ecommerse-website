@@ -2,7 +2,7 @@ import React, { createContext, useEffect, useState } from "react";
 import axios from "axios";
 
 export const Contextdata = createContext();
-const url = "https://ecommerse-5jkm.onrender.com/data";
+const url = "http://localhost:4000/data";
 
 function Api({ children }) {
   const [data, setData] = useState([]);

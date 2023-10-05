@@ -13,7 +13,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Saturday, 30 September. Details",
       "Warranty":"No Warranty",
-      "Description":"",
+      "quantity":  "",
       "category":"Mobile",
     },
     {
@@ -30,7 +30,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Wednesday, 4",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"Mobile",
     },
     {
@@ -47,7 +47,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Wednesday, 4",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"Mobile",
     },
     {
@@ -64,7 +64,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Saturday, 30 September.",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"Mobile",
     },
     {
@@ -81,7 +81,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Saturday, 30 September. ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"Mobile",
     },
     {
@@ -98,7 +98,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"Mobile",
     },
     {
@@ -115,7 +115,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"Mobile",
     },
     {
@@ -132,7 +132,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"Mobile",
     },
     {
@@ -149,7 +149,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"Mobile",
     },
     {
@@ -166,7 +166,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"Mobile",
     },
     {
@@ -183,7 +183,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"Mobile",
     },
     {
@@ -200,7 +200,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"Mobile",
     },
     {
@@ -217,7 +217,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"Mobile",
     },
     {
@@ -225,7 +225,7 @@ const data=[
       "Name":"Samsung Galaxy Z Flip3 5G",
       "deatilname":"Samsung Galaxy Z Flip5 5G (Graphite, 8GB RAM, 256GB Storage)",
       "Image":"https://res.cloudinary.com/dpqbph9ya/image/upload/f_auto,q_auto/v1/mobile/mdk9idcfcarxam44q9dz",
-      "Saleprice":"-3% ₹99,999 ",
+      "Saleprice":"-03% ₹99,999 ",
       "MRP":"M.R.P.: ₹1,02,999",
       "Rating":" 4.5",
       "Availabeoffer1":"Bank Offer 5% Unlimited Cashback on Flipkart Axis Bank Credit Card",
@@ -234,7 +234,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"Mobile",
     },
     {
@@ -251,7 +251,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"Mobile",
     },
     {
@@ -267,7 +267,7 @@ const data=[
       "Availabeoffer3":"Purchase this Furniture or Appliance and Get Extra ₹500 Off on Select ACs",
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",    "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"Mobile",
     },
     {
@@ -283,7 +283,7 @@ const data=[
       "Availabeoffer3":"Purchase this Furniture or Appliance and Get Extra ₹500 Off on Select ACs",
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",    "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"Mobile",
     },
     {
@@ -299,7 +299,7 @@ const data=[
       "Availabeoffer3":"Purchase this Furniture or Appliance and Get Extra ₹500 Off on Select ACs",
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",    "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"Mobile",
     },
     {
@@ -316,7 +316,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"Mobile",
     },
     {
@@ -333,7 +333,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"Mobile",
     },
   
@@ -343,7 +343,7 @@ const data=[
       "Name":"Apple 2023 MacBook Pro Laptop M2 Pro chip with 12‑core CPU",
       "deatilname":"Apple 2023 MacBook Pro Laptop M2 Max chip with 12‑core CPU and 30‑core GPU: 33.74 cm (14.2-inch), 32GB Unified Memory, 1TB SSD Storage. Works with iPhone/iPad; Silver",
       "Image":"https://res.cloudinary.com/dpqbph9ya/image/upload/f_auto,q_auto/v1/laptop/cpjd6vam5zp001s2xn8q",
-      "Saleprice":"-8% ₹2,85,490 ",
+      "Saleprice":"-08% ₹2,85,490 ",
       "MRP":" M.R.P.: ₹3,09,900",
       "Rating":" 4.5",
       "Availabeoffer1":"Bank Offer 5% Unlimited Cashback on Flipkart Axis Bank Credit Card",
@@ -352,7 +352,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"laptop",
     },
     {
@@ -369,7 +369,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"laptop ",
     },
     {
@@ -377,7 +377,7 @@ const data=[
       "Name":"Apple 2023 MacBook Air Laptop with M2 chip",
       "deatilname":"Apple 2023 MacBook Air Laptop with M2 chip: 38.91 cm (15.3-inch) Liquid Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, 1080p FaceTime HD Camera,Touch ID. Works with iPhone/iPad; Silver",
       "Image":"https://res.cloudinary.com/dpqbph9ya/image/upload/f_auto,q_auto/v1/laptop/cdimwnguih7gfjpbotkl",
-      "Saleprice":" -6% ₹1,26,990",
+      "Saleprice":" -06% ₹1,26,990",
       "MRP":"M.R.P.: ₹1,34,900",
       "Rating":" 4.5",
       "Availabeoffer1":"Bank Offer 5% Unlimited Cashback on Flipkart Axis Bank Credit Card",
@@ -386,7 +386,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"laptop ",
     },
     {
@@ -403,7 +403,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"laptop ",
     },
     {
@@ -420,7 +420,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"laptop ",
     },
     {
@@ -437,7 +437,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":" laptop",
     },
     {
@@ -454,7 +454,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"laptop ",
     },
     {
@@ -471,7 +471,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"laptop ",
     },
     {
@@ -488,7 +488,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"laptop ",
     },
     {
@@ -505,7 +505,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"laptop ",
     },
     {
@@ -522,7 +522,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":" laptop",
     },
     {
@@ -539,7 +539,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"laptop ",
     },
     {
@@ -556,7 +556,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":" laptop",
     },
     {
@@ -573,7 +573,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"laptop ",
     },
     {
@@ -590,7 +590,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":" laptop",
     },
     {
@@ -608,7 +608,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"laptop ",
     },
     {
@@ -625,7 +625,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"laptop ",
     },
     {
@@ -633,7 +633,7 @@ const data=[
       "Name":"HP Laptop 15s, 11th Gen Intel Core i5-1155G7",
       "deatilname":"HP Laptop 15s, 11th Gen Intel Core i5-1155G7, 15.6-inch (39.6 cm), FHD, 16GB DDR4, 512GB SSD, Intel Iris Xe Graphics, Backlit KB, Thin & Light (Win 11, MSO 2021, Silver, 1.69 kg), fr4001TU",
       "Image":"https://res.cloudinary.com/dpqbph9ya/image/upload/f_auto,q_auto/v1/laptop/xkvtaghulkocu7usm2pz",
-      "Saleprice":"-7% ₹54,990 ",
+      "Saleprice":"-07% ₹54,990 ",
       "MRP":"M.R.P.: ₹59,327",
       "Rating":" 4.5",
       "Availabeoffer1":"Bank Offer 5% Unlimited Cashback on Flipkart Axis Bank Credit Card",
@@ -642,7 +642,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"laptop ",
     },
     {
@@ -659,7 +659,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"laptop ",
     },
     {
@@ -676,7 +676,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"laptop ",
     },
   
@@ -687,7 +687,7 @@ const data=[
       "Name":"Apple 2022 iPad Air M1 Chip",
       "deatilname":"Apple 2022 iPad Air M1 Chip (10.9-inch/27.69 cm, Wi-Fi, 256GB) - Blue (5th Generation)",
       "Image":"https://res.cloudinary.com/dpqbph9ya/image/upload/f_auto,q_auto/v1/tab/nsj0heydf9mhkekzhh99",
-      "Saleprice":"-9% ₹68,400 ",
+      "Saleprice":"-09% ₹68,400 ",
       "MRP":" M.R.P.: ₹74,900",
       "Rating":" 4.5",
       "Availabeoffer1":"Bank Offer 5% Unlimited Cashback on Flipkart Axis Bank Credit Card",
@@ -696,7 +696,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"tab ",
     },
     {
@@ -704,7 +704,7 @@ const data=[
       "Name":"Apple 2021 10.2-inch (25.91 cm) iPad",
       "deatilname":"Apple 2021 10.2-inch (25.91 cm) iPad with A13 Bionic chip (Wi-Fi, 64GB) - Silver (9th Generation)",
       "Image":"https://res.cloudinary.com/dpqbph9ya/image/upload/f_auto,q_auto/v1/tab/q7yjmoximxwswpkedghc",
-      "Saleprice":"-1% ₹33,500 ",
+      "Saleprice":"-01% ₹33,500 ",
       "MRP":"M.R.P.: ₹33,900 ",
       "Rating":" 4.5",
       "Availabeoffer1":"Bank Offer 5% Unlimited Cashback on Flipkart Axis Bank Credit Card",
@@ -713,7 +713,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"tab ",
     },
     {
@@ -730,7 +730,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":" tab",
     },
     {
@@ -747,7 +747,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"tab ",
     },
     {
@@ -755,7 +755,7 @@ const data=[
       "Name":"Apple 2022 10.9-inch iPad",
       "deatilname":"Apple 2022 10.9-inch iPad (Wi-Fi, 64GB) - Blue (10th Generation)",
       "Image":"https://res.cloudinary.com/dpqbph9ya/image/upload/f_auto,q_auto/v1/tab/bgtbt2djlkqtlv7yoj8t",
-      "Saleprice":"-3% ₹43,590",
+      "Saleprice":"-03% ₹43,590",
       "MRP":"M.R.P.: ₹44,900",
       "Rating":" 4.5",
       "Availabeoffer1":"Bank Offer 5% Unlimited Cashback on Flipkart Axis Bank Credit Card",
@@ -764,7 +764,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"tab ",
     },
     {
@@ -781,7 +781,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"tab ",
     },
     {
@@ -798,7 +798,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"tab ",
     },
     {
@@ -806,8 +806,8 @@ const data=[
       "Name":"Acer One T9-1212L (25.65 cm)",
       "deatilname":"Acer One 10 T9-1212L 25.65 cm (10.1) Tablet with 6GB RAM and 128GB ROM, IPS Panel Display, Dual-Camera, Slim Metal Body, Wi-Fi + 4G LTE(Calling), Android 12 Gray",
       "Image":"https://res.cloudinary.com/dpqbph9ya/image/upload/f_auto,q_auto/v1/tab/aclrlsak5uyxvjypit5q",
-      "Saleprice":" ",
-      "MRP":" ",
+      "Saleprice":"-01 % ₹10000",
+      "MRP":"12000",
       "Rating":" 4.5",
       "Availabeoffer1":"Bank Offer 5% Unlimited Cashback on Flipkart Axis Bank Credit Card",
       "Availabeoffer2":"Bank Offer 10% Off on Bank of Baroda Mastercard debit card first time transaction, Terms and Condition apply",
@@ -815,7 +815,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":" tab",
     },
     {
@@ -832,7 +832,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"tab ",
     },
     {
@@ -849,7 +849,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"tab ",
     },
     {
@@ -866,7 +866,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"tab ",
     },
     {
@@ -883,7 +883,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":" tab",
     },
     {
@@ -900,7 +900,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":" tab",
     },
     {
@@ -918,7 +918,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":" tab",
     },
     {
@@ -935,7 +935,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":" tab",
     },
     {
@@ -952,7 +952,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":" tab",
     },
     {
@@ -969,7 +969,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"tab ",
     },
     {
@@ -986,7 +986,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"tab ",
     },
     {
@@ -1003,7 +1003,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"tab ",
     },
     {
@@ -1020,7 +1020,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"tab ",
     },
   
@@ -1039,7 +1039,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"accessories ",
     },
     {
@@ -1056,7 +1056,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"accessories ",
     },
     {
@@ -1073,7 +1073,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"accessories ",
     },
     {
@@ -1090,7 +1090,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"accessories ",
     },
     {
@@ -1107,7 +1107,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"accessories ",
     },
     {
@@ -1124,7 +1124,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"accessories ",
     },
     {
@@ -1141,7 +1141,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"accessories ",
     },
     {
@@ -1158,7 +1158,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"accessories ",
     },
     {
@@ -1175,7 +1175,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"accessories ",
     },
     {
@@ -1183,7 +1183,7 @@ const data=[
       "Name":"GoPro HERO12 Waterproof Action Camera with Front",
       "deatilname":"GoPro HERO12 Waterproof Action Camera with Front + Rear LCD Screens, 5.3K60 Ultra HD Video, HyperSmooth 6.0 with AutoBoost,1080p Live Streaming with Enduro Battery (24 Months Warranty)",
       "Image":"https://res.cloudinary.com/dpqbph9ya/image/upload/f_auto,q_auto/v1/accessories/cvahd0xufk8hn4gdxtoo",
-      "Saleprice":"-2% ₹44,990 ",
+      "Saleprice":"-02% ₹44,990 ",
       "MRP":"M.R.P.: ₹44990 ",
       "Rating":" 4.5",
       "Availabeoffer1":"Bank Offer 5% Unlimited Cashback on Flipkart Axis Bank Credit Card",
@@ -1192,7 +1192,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"accessories ",
     },
     {
@@ -1209,7 +1209,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"accessories ",
     },
     {
@@ -1226,7 +1226,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":" accessories",
     },
     {
@@ -1243,7 +1243,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"accessories ",
     },
     {
@@ -1251,7 +1251,7 @@ const data=[
       "Name":"New Apple AirPods Max - Silver",
       "deatilname":"New Apple AirPods Max - Silver",
       "Image":"https://res.cloudinary.com/dpqbph9ya/image/upload/f_auto,q_auto/v1/accessories/vxc3z9o6c3s5mzxbjowf",
-      "Saleprice":" -2% ₹59,900 ",
+      "Saleprice":" -02% ₹59,900 ",
       "MRP":" ₹60,900",
       "Rating":" 4.5",
       "Availabeoffer1":"Bank Offer 5% Unlimited Cashback on Flipkart Axis Bank Credit Card",
@@ -1260,7 +1260,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"accessories ",
     },
     {
@@ -1277,7 +1277,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":" accessories",
     },
     {
@@ -1294,7 +1294,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":" accessories",
     },
     {
@@ -1311,7 +1311,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"accessories ",
     },
     {
@@ -1328,7 +1328,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":" accessories",
     },
     {
@@ -1345,7 +1345,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"accessories ",
     },
     {
@@ -1362,7 +1362,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"accessories ",
     },
     {
@@ -1379,7 +1379,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Saturday, 30 September. Details",
       "Warranty":"No Warranty",
-      "Description":"",
+      "quantity":  "",
       "category":"Mobile",
     },
     {
@@ -1387,7 +1387,7 @@ const data=[
       "Name":"Iphone 14 pro max",
       "deatilname":"Apple iPhone 14 Pro Max (128 GB) - Space Black",
       "Image":"https://res.cloudinary.com/dpqbph9ya/image/upload/f_auto,q_auto/v1/mobile/mpotlwzuex0aj8sbaou2",
-      "Saleprice":"-9% ₹1,27,999",
+      "Saleprice":"-09% ₹1,27,999",
       "MRP":"M.R.P.: ₹1,39,900",
       "Rating":"4.5",
       "Availabeoffer1":"Bank Offer 5% Unlimited Cashback on Flipkart Axis Bank Credit Card",
@@ -1396,7 +1396,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Wednesday, 4",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"Mobile",
     },
     {
@@ -1413,7 +1413,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Wednesday, 4",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"Mobile",
     },
     {
@@ -1421,7 +1421,7 @@ const data=[
       "Name":"Apple 2023 MacBook Pro Laptop M2 Pro chip with 12‑core CPU",
       "deatilname":"Apple 2023 MacBook Pro Laptop M2 Max chip with 12‑core CPU and 30‑core GPU: 33.74 cm (14.2-inch), 32GB Unified Memory, 1TB SSD Storage. Works with iPhone/iPad; Silver",
       "Image":"https://res.cloudinary.com/dpqbph9ya/image/upload/f_auto,q_auto/v1/laptop/cpjd6vam5zp001s2xn8q",
-      "Saleprice":"-8% ₹2,85,490 ",
+      "Saleprice":"-08% ₹2,85,490 ",
       "MRP":" M.R.P.: ₹3,09,900",
       "Rating":" 4.5",
       "Availabeoffer1":"Bank Offer 5% Unlimited Cashback on Flipkart Axis Bank Credit Card",
@@ -1430,7 +1430,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"laptop",
     },
     {
@@ -1447,7 +1447,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"laptop ",
     },
     {
@@ -1455,7 +1455,7 @@ const data=[
       "Name":"Apple 2023 MacBook Air Laptop with M2 chip",
       "deatilname":"Apple 2023 MacBook Air Laptop with M2 chip: 38.91 cm (15.3-inch) Liquid Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, 1080p FaceTime HD Camera,Touch ID. Works with iPhone/iPad; Silver",
       "Image":"https://res.cloudinary.com/dpqbph9ya/image/upload/f_auto,q_auto/v1/laptop/cdimwnguih7gfjpbotkl",
-      "Saleprice":" -6% ₹1,26,990",
+      "Saleprice":" -06% ₹1,26,990",
       "MRP":"M.R.P.: ₹1,34,900",
       "Rating":" 4.5",
       "Availabeoffer1":"Bank Offer 5% Unlimited Cashback on Flipkart Axis Bank Credit Card",
@@ -1464,7 +1464,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"laptop ",
     },
     {
@@ -1472,7 +1472,7 @@ const data=[
       "Name":"Apple 2022 iPad Air M1 Chip",
       "deatilname":"Apple 2022 iPad Air M1 Chip (10.9-inch/27.69 cm, Wi-Fi, 256GB) - Blue (5th Generation)",
       "Image":"https://res.cloudinary.com/dpqbph9ya/image/upload/f_auto,q_auto/v1/tab/nsj0heydf9mhkekzhh99",
-      "Saleprice":"-9% ₹68,400 ",
+      "Saleprice":"-09% ₹68,400 ",
       "MRP":" M.R.P.: ₹74,900",
       "Rating":" 4.5",
       "Availabeoffer1":"Bank Offer 5% Unlimited Cashback on Flipkart Axis Bank Credit Card",
@@ -1481,7 +1481,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"tab ",
     },
     {
@@ -1489,7 +1489,7 @@ const data=[
       "Name":"Apple 2021 10.2-inch (25.91 cm) iPad",
       "deatilname":"Apple 2021 10.2-inch (25.91 cm) iPad with A13 Bionic chip (Wi-Fi, 64GB) - Silver (9th Generation)",
       "Image":"https://res.cloudinary.com/dpqbph9ya/image/upload/f_auto,q_auto/v1/tab/q7yjmoximxwswpkedghc",
-      "Saleprice":"-1% ₹33,500 ",
+      "Saleprice":"-01% ₹33,500 ",
       "MRP":"M.R.P.: ₹33,900 ",
       "Rating":" 4.5",
       "Availabeoffer1":"Bank Offer 5% Unlimited Cashback on Flipkart Axis Bank Credit Card",
@@ -1498,7 +1498,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"tab ",
     },
     {
@@ -1515,7 +1515,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":" tab",
     },
     {
@@ -1532,7 +1532,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"accessories ",
     },
     {
@@ -1549,7 +1549,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"accessories ",
     },
     {
@@ -1566,7 +1566,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"accessories ",
     },
     {
@@ -1583,7 +1583,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"accessories ",
     },
     {
@@ -1599,7 +1599,7 @@ const data=[
       "Availabeoffer3":"Purchase this Furniture or Appliance and Get Extra ₹500 Off on Select ACs",
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",    "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"Mobile",
     },
     {
@@ -1615,7 +1615,7 @@ const data=[
       "Availabeoffer3":"Purchase this Furniture or Appliance and Get Extra ₹500 Off on Select ACs",
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",    "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"Mobile",
     },
     {
@@ -1632,7 +1632,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"tab ",
     },
     {
@@ -1649,7 +1649,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"tab ",
     },
     {
@@ -1666,7 +1666,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"tab ",
     },
     {
@@ -1683,7 +1683,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":"tab ",
     }, 
        {
@@ -1700,7 +1700,7 @@ const data=[
       "Availabe offer 4":"Partner OfferExtra 10% off upto ₹500 on next furniture purchase",
       "Delivery":"FREE delivery Sunday, 1 October ",
       "Warranty":"No Warranty ",
-      "Description":" ",
+      "quantity":  1,
       "category":" accessories",
     },
   ]
