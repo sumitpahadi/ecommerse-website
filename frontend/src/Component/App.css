@@ -16,12 +16,12 @@
   width: 100%;
   background-color: #e3e6e6;
 
-  gap: 10px;
+  gap: 20px;
 }
 .home .mobileproduct .innerbox {
   height: 100%;
-
-  width: 350px;
+  width: 300px;
+  transition: all;
 }
 .home .mobileproduct {
   text-align: center;
@@ -30,12 +30,21 @@
   height: auto;
   max-width: 500px;
   min-width: auto;
+  transition: transform 0.3s ease; 
+}
+
+.home .mobileproduct:hover {
+  transform: scale(1.1); /* Increase the size on hover */
 }
 
 .home .mobileproduct .innerbox div img {
-  width: 60%;
+  width: 45%;
+  height: 20vh;
 }
-
+p {
+  margin-top: 0;
+ 
+}
 .home .mobileproduct .innerbox button {
   width: 150px;
   background-color: orange;
@@ -49,6 +58,7 @@ footer {
   align-items: center;
   justify-content: space-evenly;
   background-color: black;
+  
 
   color: white;
   flex-wrap: wrap;
@@ -127,15 +137,25 @@ footer div ul a {
   color: black;
 }
 
+
+
 .slider {
   margin: 0 20px;
-  overflow: "hidden";
+  overflow: hidden;
   padding: 2rem 0;
+  transition: transform 0.3s ease; /* Add transition for transform */
+}
+
+.slider:hover {
+  transform: scale(1.1); /* Increase the size on hover */
 }
 
 .slider img {
   width: 100%;
   border-radius: 10px;
+}
+.slider p{
+  margin-bottom: 0px;
 }
 
 .react-multi-carousel-list {
@@ -174,23 +194,39 @@ footer div ul a {
 }
 
 /* -----------------------cart------- */
-
+.logo{
+  display: none;
+}
 .cart {
   display: flex;
-  padding: 10px;
   background-color: #e3e6e6;
 
-  flex-direction: row;
-  justify-content: flex-end;
-  gap: 20px;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+}
+.value{
+  width: 200px;
+  border: 0.5px solid black;
+  height: 100%;
+}
+
+.d-flex {
+    width: 600px;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+.flex{
+  display: flex;
+  gap: 5px;
 }
 sup {
-  padding-top: 10px;
   font-weight: bold;
   font-size: 22px;
 }
 .form-control {
-  width: 300px;
+  width: 100%;
   border: 1px solid black;
 }
 
@@ -198,13 +234,14 @@ sup {
 
 .parent-cont {
   display: flex;
+
+  background-color: #e3e6e6;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
 .child-cont {
-  
   padding: 10px;
-
+margin-top: 20px;
   width: 500px;
   height: 20%;
 }
@@ -228,64 +265,77 @@ sup {
   color: white;
   justify-content: center;
 
-  border-radius: 5px;
+
   font-weight: bolder;
   font-size: x-large;
 }
 .second-cont div {
   height: auto;
-  width: 50%;
+  width: 80%;
+  gap: 5px;
   display: flex;
 }
 .remove button {
-  width: 116px;
+  width: 100%;
   height: 32px;
+  margin-top: 7px;
   background-color: black;
   color: white;
 }
-table{
+.amount{
+  margin-top: 20px;
+
+}
+.amount table{
+  text-align: center;
+}
+tr{
+  padding-bottom: 10px;
+}
+.amount h1{
+  margin-top: 10px;
+  background-color: yellow;
+  color: black;
+  border-radius: 10px;
   border: 2px solid black;
+  text-align: center;
+
+}
+table {
+ 
   width: 400px;
   height: 200px;
+  background-color: white;
 }
-table tr{
-  border: 2px solid black;
 
-
-}
-table th{
-  border: 2px solid black;
-  text-align: center;
-}
-table td{
-  border: 2px solid black;
-  text-align: center;
-
-}
-.container{
+.container {
   display: flex;
+  background-color:white;
   padding: 20px;
+  margin-bottom: 20px;
+ 
+  transition: transform 0.3s ease;
 }
-.no-items-message{
-
+.container:hover {
+  transform: scale(1.1); /* Increase the size on hover */
+}
+.no-items-message {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 500px;
-
 }
-.no-items-message p{
-  
+.no-items-message p {
   background-color: red;
   height: 90px;
   font-size: 50px;
+  word-wrap: break-word;
   border-radius: 8px;
   padding: 9px;
-color: white;
-  
+  color: white;
 }
-@media screen and (max-width: 650px) and (min-width: 300px) {
+@media screen and (max-width: 753px) and (min-width: 300px) {
   #carouselExampleAutoplaying .carousel-inner .carousel-item img {
     height: 300px;
   }
@@ -309,4 +359,34 @@ color: white;
   .form-control {
     width: 100%;
   }
+  .cart{
+    display: flex;
+    flex-wrap: wrap;
+  }
+ .flex{
+  display: flex;
+  width: 100%;
+  justify-content: start;
+  gap: 10px;
+  
+ }
+ .flex a .btn{
+  width: 100%;
+ }
+ .flex  a img{
+  width: 100%;
+ }
+.child-cont{
+  width: 80%;
+  
+}
+.amount{
+  width: 80%;
+}
+.amount table{
+  width: 100%;
+}
+.logo{
+  display: block;
+}
 }

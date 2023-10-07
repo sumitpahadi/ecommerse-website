@@ -1,5 +1,6 @@
 import React from "react";
 import "../App.css";
+import logo from "../assests/iSHOP Logo.svg"
 import { Link } from "react-router-dom";
 
 function Footer() {
@@ -8,7 +9,7 @@ function Footer() {
       <footer>
         <div>
           <ul>
-            <li>ClickCart</li>
+            <li><img src={logo} alt="" height={"25px"} /></li>
             <li>
               An All in one, bringing you on the best platform, knowledge and
               inspiration.
@@ -19,9 +20,9 @@ function Footer() {
         <div>
           <ul>
             <li>Contact</li>
-            <li>Vijay Nagar Ghaziabad</li>
-            <li>91+9625613067</li>
-            <li>sumitrawat1102000@gmail.com</li>
+            <li> <i className="fa-solid fa-house"></i>Vijay Nagar Ghaziabad</li>
+            <li> <i className="fa-solid fa-phone" ></i>  91+9625613067</li>
+            <li> <i className="fa-regular fa-envelope-open"></i> sumitrawat1102000@gmail.com</li>
           </ul>
         </div>
         <div>
@@ -30,7 +31,7 @@ function Footer() {
               <li>home</li>
             </Link>
             <Link to={"/mobile"}>
-              <li>Mobile</li>
+              <li >Mobile</li>
             </Link>
             <Link to={"/tablet"}>
               <li>Tablet</li>

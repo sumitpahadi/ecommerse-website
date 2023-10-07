@@ -3,18 +3,14 @@ import cart from "../assests/Shopping_cart_icon.svg.png";
 import "../App.css";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-
+import logo from "../assests/iSHOP Logo.svg";
 function Cart() {
   const select = useSelector((state) => state.cart.data);
 
   return (
     <div>
       <div className="cart">
-        <form
-          className="d-flex"
-          role="search"
-          style={{ display: "flex", justifyContent: "center", gap: "20px" }}
-        >
+        <form className="d-flex" role="search">
           <input
             className="form-control me-2"
             type="search"
@@ -25,12 +21,17 @@ function Cart() {
             Search
           </button>
         </form>
-        <sup>
+        <div className="flex">
+          <Link to={"/login"}>
+            <button className="btn btn-outline-success">Login</button>
+          </Link>
           <Link to={"/order"}>
             <img src={cart} alt="not found" height={"30px"} />
-            {select.length}
           </Link>
-        </sup>
+          <h3> {select.length}</h3>
+
+       
+        </div>
       </div>
     </div>
   );

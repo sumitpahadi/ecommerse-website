@@ -39,7 +39,7 @@ function Laptop() {
                       className={`image${item.ID}`}
                     />
                   </div>
-                  <h5>Brand Name :{item.Name}</h5>
+                  <h5>{item.Name}</h5>
                   <p>Brand Rating :{item.Rating}</p>
                   <p>Brand Sales Price :{item.Saleprice}</p>
                   <p>Brand MRP :{item.MRP}</p>

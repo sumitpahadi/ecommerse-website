@@ -30,7 +30,10 @@ function Order() {
     return price;
   };
 
-  const totalAmount = select.reduce((total, item) => total + pricecal(item.price) * item.quantity, 0);
+  const totalAmount = select.reduce(
+    (total, item) => total + pricecal(item.price) * item.quantity,
+    0
+  );
 
   return (
     <div className="parent-cont">
@@ -51,7 +54,7 @@ function Order() {
                   >
                     -
                   </button>
-                  <h4>{item.quantity}</h4>
+                  <h4 className="value">{item.quantity}</h4>
                   <button
                     className="button"
                     onClick={() => handleIncrement(item.id)}
@@ -66,29 +69,47 @@ function Order() {
             </div>
           ))
         ) : (
-          <div className="no-items-message"><p>No Item in Cart</p></div>
+          <div className="no-items-message">
+            <p>No Item</p>
+          </div>
         )}
       </div>
       {select.length > 0 && (
         <div className="amount">
+          
           <table>
             <tbody>
               <tr>
-                <th>Item</th>
+                <th><h2>Price Detail</h2></th>
+              </tr>
+              <tr>
+                <th>Number Of Item</th>
+                <th>Brand Name</th>
                 <th>Price</th>
               </tr>
               {select.map((item, index) => (
                 <tr key={index}>
-                  <td><b>Brand  :   </b>{item.name.slice(0, 8)}...</td>
-                  <td>₹{pricecal(item.price)}</td>
+                  <td>  No of item ({item.quantity})
+                    <br /></td>
+                  <td>
+                    
+                  
+                    {item.name.slice(0, 8)}...
+                  </td>
+                  <td>₹{pricecal(item.price)*item.quantity}</td>
                 </tr>
               ))}
+              
               <tr>
-                <td>Total Amount</td>
+                <td colSpan={"2"}>Total Amount  :</td>
+              
+              
+               
                 <td> ₹{totalAmount}</td>
               </tr>
             </tbody>
           </table>
+          <h1>Place your order</h1>
         </div>
       )}
     </div>
