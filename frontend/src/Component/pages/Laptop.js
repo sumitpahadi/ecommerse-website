@@ -2,6 +2,7 @@ import React from "react";
 import { useContext } from "react";
 import { Contextdata } from "../data/Api";
 import Mutlislder from "../Multislider/Mutlislder";
+import Slider from "../Slider/Slider";
 
 import { Link } from "react-router-dom";
 import "../App.css";
@@ -10,7 +11,7 @@ function Laptop() {
   console.log(data1);
   return (
     <div>
-      {/* <Slider></Slider> */}
+
       <div className="home">
         {data1
           .filter((item) => item.ID <= 32 && item.ID > 20)

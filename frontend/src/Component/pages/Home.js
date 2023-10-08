@@ -52,6 +52,9 @@ function Laptop() {
             );
           })}
       </div>
+      <h2 className="sales" >Great Indian Festival | Live now</h2>
+      <Mutlislder id={20} />
+
       <br />
       <div>
         <h2 className="sales" >Sales on Big Billion Day</h2>

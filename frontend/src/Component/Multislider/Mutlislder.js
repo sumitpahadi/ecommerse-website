@@ -9,18 +9,18 @@ import "../App.css";
 const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
-    items: 4,
-    slidesToSlide: 4
+    items: 5,
+    slidesToSlide: 5
   },
   tablet: {
     breakpoint: { max: 1024, min: 768 },
-    items: 2,
+    items: 3,
     slidesToSlide: 3
   },
   mobile: {
     breakpoint: { max: 768, min: 300 },
-    items: 1, // Adjusted to show only 1 item at a time on mobile
-    slidesToSlide: 1
+    items: 2, // Adjusted to show only 1 item at a time on mobile
+    slidesToSlide: 2
   }
 };
 
@@ -44,14 +44,12 @@ const Mutlislder = ({ id }) => {
           .map((item, index) => {
             return (
               <div className="slider" key={index}>
-                <img src={item.Image} alt="" />
-                <h5>Brand Name :{item.Name}</h5>
-                <p>Brand Rating :{item.Rating}</p>
-                <p>Brand Sales Price :{item.Saleprice}</p>
-                <p>Brand MRP :{item.MRP}</p>
                 <Link to={"/product/" + item.ID + "/" + item.category}>
-                  <button>Add To Cart</button>
+                <img src={item.Image} alt="" />
                 </Link>
+                <p>Brand Rating :{item.Rating}</p>
+                <h5>Brand Name :{item.Name}</h5>
+                  
               </div>
             );
           })}
