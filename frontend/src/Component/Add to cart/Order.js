@@ -1,6 +1,7 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { increment, decrement, removeItem } from "../Createslice/Slice";
+import empty from "../assests/emptycart.webp"
 
 
 function Order() {
@@ -71,7 +72,11 @@ function Order() {
           ))
         ) : (
           <div className="no-items-message">
-        <p>no item</p>
+         <div className="empty-cart">
+      <img src={empty} alt="Empty Cart"  />
+      <p>Cart is Empty</p>
+  
+    </div>
           </div>
         )}
       </div>

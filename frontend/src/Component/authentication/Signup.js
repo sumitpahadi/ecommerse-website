@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 function Signup() {
   const nav = useNavigate();
+  const [dat, setdata] = useState("");
 
   const [formData, setFormData] = useState({
     username: "",
@@ -28,16 +29,13 @@ function Signup() {
           const token = response.data.token;
           localStorage.setItem("token", token);
           console.log(response.data);
+          console.log(response);
           if (response.data.msg == null) {
-            alert("hii",response.data);
-          } else if(response.data.msg){
-          
-            nav("/login")
-            
-
-
-
-
+            alert("hii", response.data);
+          } else if (response.data.result !== formData.email) {
+            setdata(response.data.msg);
+          } else {
+            nav("/login");
           }
         })
         .catch((error) => {

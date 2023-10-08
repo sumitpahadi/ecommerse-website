@@ -5,6 +5,7 @@ import { Link, useNavigate } from "react-router-dom"; // Import withRouter
 
 function Login() {
   const nav = useNavigate();
+  const [data,setdata]=useState()
   const [formData, setFormData] = useState({
     email: "",
     password: "",
@@ -29,8 +30,12 @@ function Login() {
       .then((response) => {
         if (response.data.msg == null) {
           alert(response.data);
-        } else if (response.data.msg) {
-          alert(response.data.msg);
+        } else if (response.data.result!==formData.email) {
+          setdata(response.data.msg)
+       
+         
+        }
+        else {
           nav("/");
         }
       })
@@ -65,6 +70,7 @@ function Login() {
             required
           />
         </div>
+        <p>{data}</p>
 
         <button type="submit" className="login-button">
           Login
