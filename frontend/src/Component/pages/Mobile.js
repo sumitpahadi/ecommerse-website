@@ -10,10 +10,9 @@ function Mobile() {
   console.log(data1);
   return (
     <div>
-      {/* <Slider></Slider> */}
       <div className="home">
         {data1
-          .filter((item) => item.ID <=20 && item.ID>8)
+          .filter((item) => item.ID <= 20 && item.ID > 8)
           .map((item, index) => {
             return (
               <div className="mobileproduct" key={index} id="productsub">
@@ -33,8 +32,19 @@ function Mobile() {
             );
           })}
       </div>
+      <h2 className="sales" >Sales on Mobile Phones</h2>
+      <iframe
+         height={"300px"}
+         width={"100%"}
+         style={{borderRadius:"10px"}}
+        src="https://www.youtube.com/embed/mSSy8hBa4bY"
+        title="Top 10 Crazy Deals In Amazon Great Indian Festival 2023 ⚡ MacBook Air M1, Sony TWS &amp; More!"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
       <br />
-      <Mutlislder id={8}/>
+      <Mutlislder id={8} />
       <br />
     </div>
   );

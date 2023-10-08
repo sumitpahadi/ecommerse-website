@@ -7,6 +7,7 @@ import Mutlislder from "../Multislider/Mutlislder";
 import Slider from "../Slider/Slider";
 import { Link } from "react-router-dom";
 import "../App.css";
+import ads from "../assests/ads.mp4";
 
 function Laptop() {
   const data1 = useContext(Contextdata);
@@ -53,6 +54,18 @@ function Laptop() {
       </div>
       <br />
       <div>
+        <h2 className="sales" >Sales on Big Billion Day</h2>
+        <iframe
+             height={"300px"}
+             width={"100%"}
+             style={{borderRadius:"10px"}}
+          src="https://www.youtube.com/embed/mWuV75uxgxg"
+          title="Top 20+ Best Phone Deals for You - Flipkart Big Billion Day 2023"
+          frameborder="0"
+          allow="accelerometer autoplay clipboard-write encrypted-media gyroscope picture-in-picture web-share"
+          allowfullscreen
+        ></iframe>
+
         <img
           src="https://rukminim2.flixcart.com/fk-p-flap/2000/2000/image/1d2a222a9659fa9d.jpg?q=50"
           alt=""

@@ -13,7 +13,7 @@ function Tablet() {
       {/* <Slider></Slider> */}
       <div className="home">
         {data1
-          .filter((item) => item.ID <=60 && item.ID>48)
+          .filter((item) => item.ID <= 60 && item.ID > 48)
           .map((item, index) => {
             return (
               <div className="mobileproduct" key={index} id="productsub">
@@ -34,7 +34,18 @@ function Tablet() {
           })}
       </div>
       <br />
-      <Mutlislder id={48}/>
+      <h2 className="sales" >Sales on Tablet</h2>
+      <iframe
+         height={"300px"}
+         width={"100%"}
+         style={{borderRadius:"10px"}}
+        src="https://www.youtube.com/embed/xUZF6WCoXQY"
+        title="Iphone 13 Pre Booking | Iphone 13 &amp; 14 Order Cancel | Big Billion Days 2023 | Open Box Delivery"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+      <Mutlislder id={48} />
       <br />
     </div>
   );

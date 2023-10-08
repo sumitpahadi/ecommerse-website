@@ -2,6 +2,7 @@ import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { increment, decrement, removeItem } from "../Createslice/Slice";
 
+
 function Order() {
   const select = useSelector((state) => state.cart.data);
   const dispatch = useDispatch(); // Initialize dispatch
@@ -70,7 +71,7 @@ function Order() {
           ))
         ) : (
           <div className="no-items-message">
-            <p>No Item</p>
+        <p>no item</p>
           </div>
         )}
       </div>

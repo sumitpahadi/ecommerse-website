@@ -6,8 +6,10 @@
 }
 #postion {
   position: sticky;
+
   top: 0;
 }
+
 .home {
   display: flex;
   justify-content: space-evenly;
@@ -30,7 +32,7 @@
   height: auto;
   max-width: 500px;
   min-width: auto;
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
 }
 
 .home .mobileproduct:hover {
@@ -43,7 +45,6 @@
 }
 p {
   margin-top: 0;
- 
 }
 .home .mobileproduct .innerbox button {
   width: 150px;
@@ -58,7 +59,6 @@ footer {
   align-items: center;
   justify-content: space-evenly;
   background-color: black;
-  
 
   color: white;
   flex-wrap: wrap;
@@ -129,14 +129,31 @@ footer div ul a {
 .mobileproduct .innerbox div .image99 {
   width: 100%;
 }
+.mobileproduct .innerbox p {
+  margin-bottom: 0px;
+}
+.mobileproduct .innerbox h5 {
+  margin-bottom: 0px;
+}
 .navbar-expand-lg .navbar-nav .nav-link {
+ 
   padding-right: var(--bs-navbar-nav-link-padding-x);
   padding-left: var(--bs-navbar-nav-link-padding-x);
   font-size: 20px;
-  font-weight: bolder;
-  color: black;
+ 
+  color: white;
+ 
+}
+.navbar-expand-lg{
+  background-color: #232F3E;
+ 
 }
 
+.fa-bars{
+  color: white;
+  font-size: 27px;
+  margin-top: 13px;
+}
 
 
 .slider {
@@ -154,7 +171,10 @@ footer div ul a {
   width: 100%;
   border-radius: 10px;
 }
-.slider p{
+.slider p {
+  margin-bottom: 0px;
+}
+.slider h5 {
   margin-bottom: 0px;
 }
 
@@ -181,7 +201,7 @@ footer div ul a {
   width: 80%;
 }
 .parent .slider {
-  height: 471px;
+  height: 408px;
   background-color: white;
 
   text-align: center;
@@ -194,30 +214,40 @@ footer div ul a {
 }
 
 /* -----------------------cart------- */
-.logo{
+.logo {
   display: none;
 }
 .cart {
   display: flex;
-  background-color: #e3e6e6;
+  background-color: #131921;
 
   justify-content: center;
   gap: 10px;
   padding: 10px;
 }
-.value{
+.value {
   width: 200px;
   border: 0.5px solid black;
   height: 100%;
 }
 
 .d-flex {
-    width: 600px;
-    display: flex;
-    gap: 5px;
-    justify-content: center;
+  width: 600px;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
 }
-.flex{
+.d-flex button {
+  background-color: white;
+}
+.d-flex h3 {
+  color: white;
+}
+.d-flex a i {
+  color: white;
+  margin-top: 17px;
+}
+.flex {
   display: flex;
   gap: 5px;
 }
@@ -241,7 +271,7 @@ sup {
 }
 .child-cont {
   padding: 10px;
-margin-top: 20px;
+  margin-top: 20px;
   width: 500px;
   height: 20%;
 }
@@ -265,7 +295,6 @@ margin-top: 20px;
   color: white;
   justify-content: center;
 
-
   font-weight: bolder;
   font-size: x-large;
 }
@@ -273,8 +302,13 @@ margin-top: 20px;
   height: auto;
   width: 80%;
   gap: 5px;
+  margin-bottom: 0px;
   display: flex;
 }
+.second-cont p {
+  margin-bottom: 0px;
+}
+
 .remove button {
   width: 100%;
   height: 32px;
@@ -282,27 +316,24 @@ margin-top: 20px;
   background-color: black;
   color: white;
 }
-.amount{
+.amount {
   margin-top: 20px;
-
 }
-.amount table{
+.amount table {
   text-align: center;
 }
-tr{
+tr {
   padding-bottom: 10px;
 }
-.amount h1{
+.amount h1 {
   margin-top: 10px;
   background-color: yellow;
   color: black;
   border-radius: 10px;
   border: 2px solid black;
   text-align: center;
-
 }
 table {
- 
   width: 400px;
   height: 200px;
   background-color: white;
@@ -310,10 +341,10 @@ table {
 
 .container {
   display: flex;
-  background-color:white;
+  background-color: white;
   padding: 20px;
   margin-bottom: 20px;
- 
+
   transition: transform 0.3s ease;
 }
 .container:hover {
@@ -324,7 +355,7 @@ table {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 500px;
+  height: 60vh;
 }
 .no-items-message p {
   background-color: red;
@@ -335,6 +366,13 @@ table {
   padding: 9px;
   color: white;
 }
+
+.sales{
+  text-align: center;
+  font-weight: bold;
+}
+
+
 @media screen and (max-width: 753px) and (min-width: 300px) {
   #carouselExampleAutoplaying .carousel-inner .carousel-item img {
     height: 300px;
@@ -359,34 +397,32 @@ table {
   .form-control {
     width: 100%;
   }
-  .cart{
+  .cart {
     display: flex;
     flex-wrap: wrap;
   }
- .flex{
-  display: flex;
-  width: 100%;
-  justify-content: start;
-  gap: 10px;
-  
- }
- .flex a .btn{
-  width: 100%;
- }
- .flex  a img{
-  width: 100%;
- }
-.child-cont{
-  width: 80%;
-  
-}
-.amount{
-  width: 80%;
-}
-.amount table{
-  width: 100%;
-}
-.logo{
-  display: block;
-}
+  .flex {
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    gap: 10px;
+  }
+  .flex a .btn {
+    width: 100%;
+  }
+  .flex a img {
+    width: 100%;
+  }
+  .child-cont {
+    width: 80%;
+  }
+  .amount {
+    width: 80%;
+  }
+  .amount table {
+    width: 100%;
+  }
+  .logo {
+    display: block;
+  }
 }

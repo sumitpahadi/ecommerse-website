@@ -33,8 +33,19 @@ function Laptop() {
             );
           })}
       </div>
+      <h2 className="sales" >Sales on Laptop</h2>
+      <iframe
+        height={"300px"}
+        width={"100%"}
+        style={{borderRadius:"10px"}}
+        src="https://www.youtube.com/embed/ALXlKAXOIYE"
+        title="🔥 EXCLUSIVE 🔥 Flipkart Big Billion Day Sale 2023 Laptops Deals &amp; Offers 🔥Best Professional Laptops"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
       <br />
-      <Mutlislder  id={40}/>
+      <Mutlislder id={40} />
       <br />
     </div>
   );
