@@ -27,7 +27,7 @@ function Routing() {
         {shouldShowNavbarAndFooter() && <Navbar />}
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/laptop" element={<Laptop />} />
+          <Route path="/laptop/:brandname" element={<Laptop />} />
           <Route path="/Mobile" element={<Mobile />} />
           <Route path="/tablet" element={<Tablet />} />
           <Route path="/accessories" element={<Accessories />} />

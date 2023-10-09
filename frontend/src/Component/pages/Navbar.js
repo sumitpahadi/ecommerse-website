@@ -3,8 +3,13 @@ import { Link } from "react-router-dom";
 import "../App.css";
 import logo from "../assests/iSHOP Logo.svg";
 import Cart from "../cart/Cart";
+import { Contextdata } from "../data/Api";
+import { useContext } from "react";
 
 function Navbar() {
+  const data1 = useContext(Contextdata);
+  console.log(data1);
+
   const [menuOpen, setMenuOpen] = useState(false);
 
   // Function to close the menu
@@ -26,7 +31,6 @@ function Navbar() {
             />
           </Link>
           <button
-          
             className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
@@ -36,7 +40,9 @@ function Navbar() {
             aria-label="Toggle navigation"
             onClick={() => setMenuOpen(!menuOpen)}
           >
-            <span className="navbar-toggler-icon" ><i className="fa-solid fa-bars fa-2xs"></i></span>
+            <span className="navbar-toggler-icon">
+              <i className="fa-solid fa-bars fa-2xs"></i>
+            </span>
           </button>
           <div
             className={`collapse navbar-collapse ${menuOpen ? "show" : ""}`}
@@ -59,9 +65,54 @@ function Navbar() {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to={"/laptop"} onClick={closeMenu}>
-                  Laptop
-                </Link>
+                <div class="dropdown dropdown1">
+                  <Link
+                    class="btn  dropdown-toggle nav-link"
+                    to={"/laptop"}
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    onClick={closeMenu}
+                  >
+                    Laptop
+                  </Link>
+
+                  <ul class="dropdown-menu">
+                    <li>
+                      <Link class="dropdown-item" to={"/laptop/"+"all"}>
+                        All
+                      </Link>
+                    </li>
+                    <li>
+                      {data1
+                        .filter((item) => item.ID === 23)
+                        .map((item, index) => {
+                          return (
+                            <Link
+                              class="dropdown-item"
+                              to={"/laptop/" + item.brandname}
+                            >
+                              Mac Book
+                            </Link>
+                          );
+                        })}
+                    </li>
+                    <li>
+                      {data1
+                        .filter((item) => item.ID === 32 )
+                        .map((item, index) => {
+                          return (
+                            <Link
+                              class="dropdown-item"
+                              to={"/laptop/" + item.brandname}
+                            >
+                              Window
+                            </Link>
+                          );
+                        })}
+                    </li>
+                  </ul>
+                </div>
               </li>
               <li className="nav-item">
                 <Link

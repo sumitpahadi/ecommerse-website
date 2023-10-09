@@ -388,7 +388,9 @@ table {
   font-weight: bolder;
 }
 /* -----------------------api */
-
+.dropdown1{
+  display: flex;
+}
 @media screen and (max-width: 753px) and (min-width: 300px) {
   #carouselExampleAutoplaying .carousel-inner .carousel-item img {
     height: 300px;
@@ -441,6 +443,7 @@ table {
   .logo {
     display: block;
   }
+
 }
 
 
