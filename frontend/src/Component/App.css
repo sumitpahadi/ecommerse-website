@@ -391,6 +391,10 @@ table {
 .dropdown1{
   display: flex;
 }
+
+.nav-item2{
+  display: none;
+}
 @media screen and (max-width: 753px) and (min-width: 300px) {
   #carouselExampleAutoplaying .carousel-inner .carousel-item img {
     height: 300px;
@@ -444,6 +448,18 @@ table {
     display: block;
   }
 
+}
+
+@media screen and (max-width: 1000px)  {
+  .nav-item2{
+    display: block;
+  }
+  
+  .nav-item3{
+    display: none;
+  }
+
+  
 }
 
 

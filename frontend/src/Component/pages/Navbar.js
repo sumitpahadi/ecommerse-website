@@ -64,7 +64,7 @@ function Navbar() {
                   Tablet
                 </Link>
               </li>
-              <li className="nav-item">
+              <li className="nav-item3">
                 <div class="dropdown dropdown1">
                   <Link
                     class="btn  dropdown-toggle nav-link"
@@ -114,6 +114,16 @@ function Navbar() {
                   </ul>
                 </div>
               </li>
+              <li className="nav-item2">
+                <Link
+                  className="nav-link"
+                  to={"/laptop/"+"all"}
+                  onClick={closeMenu}
+                >
+                  Laptop
+                </Link>
+              </li>
+
               <li className="nav-item">
                 <Link
                   className="nav-link"
