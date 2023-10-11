@@ -24,7 +24,7 @@ function Product() {
     console.log("Token:", token);
 
     axios
-      .get("http://localhost:4000/dashboard", {
+      .get("https://ecommerse-5jkm.onrender.com/dashboard", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
