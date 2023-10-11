@@ -41,9 +41,9 @@ function Accessories() {
              style={{borderRadius:"10px"}}
           src="https://www.youtube.com/embed/mWuV75uxgxg"
           title="Top 20+ Best Phone Deals for You - Flipkart Big Billion Day 2023"
-          frameborder="0"
+          frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
+          allowFullScreen
         ></iframe>
       <br />
       <Mutlislder id={68}/>

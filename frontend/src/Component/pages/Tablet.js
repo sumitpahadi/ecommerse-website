@@ -41,9 +41,9 @@ function Tablet() {
          style={{borderRadius:"10px"}}
         src="https://www.youtube.com/embed/xUZF6WCoXQY"
         title="Iphone 13 Pre Booking | Iphone 13 &amp; 14 Order Cancel | Big Billion Days 2023 | Open Box Delivery"
-        frameborder="0"
+        frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
+        allowFullScreen
       ></iframe>
       <Mutlislder id={48} />
       <br />

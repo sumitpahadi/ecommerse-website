@@ -1,6 +1,10 @@
 const routing = require("express").Router();
-const { register, login, dashboard,data } = require("../Usercontroller/controller");
+const data=require('../Usercontroller/data')
+const {insertdata,getapidata}=require('../Usercontroller/usercontroller')
+const { register, login, dashboard} = require("../Usercontroller/controller");
 const userauth = require("../middleware/auth_middle");
+routing.get("/insertaoi",insertdata)
+routing.get("/getdata",getapidata)
 routing.post("/register", register);
 routing.post("/login", login);
 routing.get("/dashboard", userauth, dashboard);

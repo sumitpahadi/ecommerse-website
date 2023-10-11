@@ -65,9 +65,9 @@ function Navbar() {
                 </Link>
               </li>
               <li className="nav-item3">
-                <div class="dropdown dropdown1">
+                <div className="dropdown dropdown1">
                   <Link
-                    class="btn  dropdown-toggle nav-link"
+                    className="btn  dropdown-toggle nav-link"
                     to={"/laptop"}
                     type="button"
                     data-bs-toggle="dropdown"
@@ -77,9 +77,9 @@ function Navbar() {
                     Laptop
                   </Link>
 
-                  <ul class="dropdown-menu">
+                  <ul className="dropdown-menu">
                     <li>
-                      <Link class="dropdown-item" to={"/laptop/"+"all"}>
+                      <Link className="dropdown-item" to={"/laptop/"+"all"}>
                         All
                       </Link>
                     </li>
@@ -88,8 +88,8 @@ function Navbar() {
                         .filter((item) => item.ID === 23)
                         .map((item, index) => {
                           return (
-                            <Link
-                              class="dropdown-item"
+                            <Link key={index}
+                              className="dropdown-item"
                               to={"/laptop/" + item.brandname}
                             >
                               Mac Book
@@ -99,11 +99,11 @@ function Navbar() {
                     </li>
                     <li>
                       {data1
-                        .filter((item) => item.ID === 32 )
+                        .filter((item) => item.ID === 32)
                         .map((item, index) => {
                           return (
-                            <Link
-                              class="dropdown-item"
+                            <Link key={index}
+                              className="dropdown-item"
                               to={"/laptop/" + item.brandname}
                             >
                               Window
@@ -117,7 +117,7 @@ function Navbar() {
               <li className="nav-item2">
                 <Link
                   className="nav-link"
-                  to={"/laptop/"+"all"}
+                  to={"/laptop/" + "all"}
                   onClick={closeMenu}
                 >
                   Laptop

@@ -3,7 +3,7 @@ import axios from "axios";
 
 import "./data.css"
 export const Contextdata = createContext();
-const url = "https://ecommerse-5jkm.onrender.com/data";
+const url = "http://localhost:4000/getdata";
 
 function Api({ children }) {
   const [data, setData] = useState([]);
@@ -20,7 +20,7 @@ function Api({ children }) {
   }, []);
 
   if (loading) {
-    return   <div class="ring">Loading
+    return   <div className="ring">Loading
     <span className="span"></span>
   </div>
   }

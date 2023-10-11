@@ -39,9 +39,9 @@ function Mobile() {
          style={{borderRadius:"10px"}}
         src="https://www.youtube.com/embed/mSSy8hBa4bY"
         title="Top 10 Crazy Deals In Amazon Great Indian Festival 2023 ⚡ MacBook Air M1, Sony TWS &amp; More!"
-        frameborder="0"
+        frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
+        allowFullScreen
       ></iframe>
       <br />
       <Mutlislder id={8} />

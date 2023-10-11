@@ -1,33 +1,66 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import { useParams } from "react-router-dom";
 import { Contextdata } from "../data/Api";
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
-import {addtocart} from "../Createslice/Slice";
+import { addtocart } from "../Createslice/Slice";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 import "../App.css";
 import Mutlislder from "../Multislider/Mutlislder";
 
 function Product() {
+  // Define notify function here at the top-level scope
+  const notify = () => toast(`Item is add on cart `);
+
+  // ----------token ---------------verify
+  const [verified, setVerified] = useState(false);
+
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    console.log("Token:", token);
+
+    axios
+      .get("http://localhost:4000/dashboard", {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      })
+      .then((response) => {
+        console.log(response.data);
+        setVerified(true);
+      })
+      .catch((error) => {
+        console.error("Error fetching data:", error);
+      });
+  }, []);
+
+  // --------------------------------------------------------------
   const dispatch = useDispatch();
   const selelct = useSelector((state) => state.cart.data);
   const data = useContext(Contextdata);
-  console.log(selelct)
+  console.log(selelct);
 
   const { id } = useParams();
 
   const handleClick = (item) => {
-    if (item) {
+    if (verified) {
       dispatch(
         addtocart({
           id: item.ID,
           name: item.Name,
           image: item.Image,
-          quantity:item.quantity,
-          price:item.Saleprice,
-        })
+          quantity: item.quantity,
+          price: item.Saleprice,
+        }),
+        notify()
       );
+      // Call the notify function here after adding to the cart
+    } else {
+      alert("Please log in first to add to cart.");
     }
   };
 
@@ -37,7 +70,6 @@ function Product() {
         {data
           .filter((item) => item.ID === parseInt(id))
           .map((item, index) => (
-            
             <div key={index} className="productdetail">
               <div className="productimage">
                 <img src={item.Image} alt="click here" height={"300px"} />
@@ -55,14 +87,29 @@ function Product() {
                   <li>{item.Availabeoffer3}</li>
                   <li>{item.Availabeoffer3}</li>
                 </ul>
-                <Link onClick={() => handleClick(item)}>
-                  <button>Add To Cart</button>
-                </Link>{" "}
+                {verified ? (
+                  <Link onClick={() => handleClick(item)}>
+                    <button>Add To Cart</button>
+                  </Link>
+                ) : (
+                  <p>
+                    <Link to="/login">
+                      <button>login first</button>
+                    </Link>
+                  </p>
+                )}
+                {verified && (
+                  <div>
+                    <h1></h1>
+                  </div>
+                )}
               </div>
             </div>
           ))}
         {/* Render three components only */}
         <Mutlislder id={100} />
+
+        <ToastContainer />
       </div>
     </>
   );

@@ -1,8 +1,7 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { increment, decrement, removeItem } from "../Createslice/Slice";
-import empty from "../assests/emptycart.webp"
-
+import empty from "../assests/emptycart.webp";
 
 function Order() {
   const select = useSelector((state) => state.cart.data);
@@ -72,21 +71,21 @@ function Order() {
           ))
         ) : (
           <div className="no-items-message">
-         <div className="empty-cart">
-      <img src={empty} alt="Empty Cart"  />
-      <p>Cart is Empty</p>
-  
-    </div>
+            <div className="empty-cart">
+              <img src={empty} alt="Empty Cart" />
+              <p>Cart is Empty</p>
+            </div>
           </div>
         )}
       </div>
       {select.length > 0 && (
         <div className="amount">
-          
           <table>
             <tbody>
               <tr>
-                <th><h2>Price Detail</h2></th>
+                <th>
+                  <h2>Price Detail</h2>
+                </th>
               </tr>
               <tr>
                 <th>Number Of Item</th>
@@ -95,22 +94,19 @@ function Order() {
               </tr>
               {select.map((item, index) => (
                 <tr key={index}>
-                  <td>  No of item ({item.quantity})
-                    <br /></td>
                   <td>
-                    
-                  
-                    {item.name.slice(0, 8)}...
+                    {" "}
+                    No of item ({item.quantity})
+                    <br />
                   </td>
-                  <td>₹{pricecal(item.price)*item.quantity}</td>
+                  <td>{item.name.slice(0, 8)}...</td>
+                  <td>₹{pricecal(item.price) * item.quantity}</td>
                 </tr>
               ))}
-              
+
               <tr>
-                <td colSpan={"2"}>Total Amount  :</td>
-              
-              
-               
+                <td colSpan={"2"}>Total Amount :</td>
+
                 <td> ₹{totalAmount}</td>
               </tr>
             </tbody>

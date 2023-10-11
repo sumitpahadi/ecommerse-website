@@ -1,25 +1,30 @@
-const jwt=require("jsonwebtoken")
-const secretkey="smnfksjfherjgherjg"
-const userauth=(req,res,next)=>{
+const jwt = require("jsonwebtoken");
+const secretkey = "smnfksjfherjgherjg";
 
-const bearer=req.headers["authorization"]
-if (bearer===undefined) {
-    return res.send({msg:"no tokken"})
-    
-}
-const tokken=bearer.split(" ")[1];
-if (tokken===undefined) {
-    return res.send({ms:"user is not authorized user and there is no tooke"})
-    
-}
-const verify=jwt.verify(tokken,secretkey)
-if (verify) {
-    next()
-    
-}
-return res.send({msg:"not authorized for particular user"})
+const userauth = (req, res, next) => {
+  const bearer = req.headers["authorization"];
+  
+  if (bearer === undefined) {
+    return res.status(401).json({ msg: "No token" });
+  }
 
-}
+  const token = bearer.split(" ")[1];
+  
+  if (token === undefined) {
+    return res.status(401).json({ msg: "User not authorized or session expired" });
+  }
 
+  try {
+    const verify = jwt.verify(token, secretkey);
+    if (verify) {
+      return next();
+    }
+    console.log("Not verified");
+    return res.status(401).json({ msg: "Not authorized for the particular resource" });
+  } catch (err) {
+    console.error("JWT Verification Error:", err.message);
+    return res.status(401).json({ msg: "JWT verification failed" });
+  }
+};
 
-module.exports=userauth;
+module.exports = userauth;

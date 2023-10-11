@@ -5,7 +5,7 @@ import { Link, useNavigate } from "react-router-dom"; // Import withRouter
 
 function Login() {
   const nav = useNavigate();
-  const [data,setdata]=useState()
+  const [data, setdata] = useState();
   const [formData, setFormData] = useState({
     email: "",
     password: "",
@@ -21,29 +21,23 @@ function Login() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    const token = localStorage.getItem("token");
-    console.log("token is " + token);
-
     axios
-      .post("https://ecommerse-5jkm.onrender.com/login", formData)
+      .post("http://localhost:4000/login", formData)
       .then((response) => {
-        if (response.data.msg == null) {
-          alert(response.data);
-        } else if (response.data.result!==formData.email) {
-          setdata(response.data.msg)
+        if (response.data.user) {
+          const token = response.data.token;
+          console.log(token);
+          localStorage.setItem("token", token);
+          nav("/")
+        } else {
+          setdata(response.data.msg);
        
-         
-        }
-        else {
-          nav("/");
         }
       })
       .catch((error) => {
         console.error("Error logging in:", error);
       });
   };
-
   return (
     <div className="login-container">
       <form onSubmit={handleSubmit} className="login-form">
@@ -70,7 +64,7 @@ function Login() {
             required
           />
         </div>
-        <p>{data}</p>
+        <p style={{ color: "red" }}>{data}</p>
 
         <button type="submit" className="login-button">
           Login
@@ -84,5 +78,4 @@ function Login() {
     </div>
   );
 }
-
 export default Login;

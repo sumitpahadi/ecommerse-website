@@ -1,11 +1,14 @@
 import React from "react";
 
+
+
 import "../App.css";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import logo from "../assests/iSHOP Logo.svg";
+
 function Cart() {
   const select = useSelector((state) => state.cart.data);
+
 
   return (
     <div>
@@ -31,6 +34,8 @@ function Cart() {
           <h3> {select.length}</h3>
         </form>
       </div>
+
+     
     </div>
   );
 }

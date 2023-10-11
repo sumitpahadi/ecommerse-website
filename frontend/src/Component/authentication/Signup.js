@@ -4,56 +4,42 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 function Signup() {
+  const [data, setdata] = useState();
   const nav = useNavigate();
-  const [dat, setdata] = useState("");
 
   const [formData, setFormData] = useState({
     username: "",
     email: "",
     password: "",
-    confirmPassword: "",
+    confirmpassword: "",
   });
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
-
   const handleSubmit = (e) => {
-    if (formData.password === formData.confirmPassword) {
-      e.preventDefault();
-
-      axios
-        .post("https://ecommerse-5jkm.onrender.com/register", formData)
-        .then((response) => {
-          const token = response.data.token;
-          localStorage.setItem("token", token);
-          console.log(response.data);
-          console.log(response);
-          if (response.data.msg == null) {
-            alert("hii", response.data);
-          } else if (response.data.result !== formData.email) {
-            setdata(response.data.msg);
-          } else {
-            nav("/login");
-          }
-        })
-        .catch((error) => {
-          console.error("Error registering:", error);
-        });
-
-      setFormData({
-        username: "",
-        email: "",
-        password: "",
-        confirmPassword: "",
+    e.preventDefault();
+    axios
+      .post("http://localhost:4000/register", formData)
+      .then((response) => {
+        if (response.data.user) {
+          setFormData({
+            username: "",
+            email: "",
+            password: "",
+            confirmpassword: "",
+          });
+          nav("/login");
+        } else {
+          setdata(response.data.msg);
+        }
+      })
+      .catch((error) => {
+        console.error("Error registering:", error);
       });
-    } else {
-      e.preventDefault();
-      alert("password and confirm password does not match");
-    }
+  
   };
-
   return (
     <div className="register-container">
       <form onSubmit={handleSubmit} className="register-form">
@@ -92,16 +78,17 @@ function Signup() {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="confirmPassword">Confirm Password</label>
+          <label htmlFor="confirmpassword">Confirm Password</label>
           <input
             type="password"
-            id="confirmPassword"
-            name="confirmPassword"
-            value={formData.confirmPassword}
+            id="confirmpassword"
+            name="confirmpassword"
+            value={formData.confirmpassword}
             onChange={handleChange}
             required
           />
         </div>
+        <p style={{ color: "red" }}>{data}</p>
         <button type="submit" className="register-button">
           Register
         </button>
