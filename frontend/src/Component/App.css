@@ -400,8 +400,13 @@ table {
 
 
 
+/* -------------------login and logout render----- */
 
-
+.login a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
 
 
 /* ------------------------------------styling the seacrch bar------------------------ */

@@ -10,6 +10,7 @@ function Cart() {
   const userid = localStorage.getItem("userid");
   const filteredItems = select.filter((item) => item.user_id === userid);
   const [data1, setdata] = useState([]);
+  const token = localStorage.getItem("token");
 
   useEffect(() => {
     if (name === "") {
@@ -22,7 +23,7 @@ function Cart() {
     };
 
     axios
-      .post("http://localhost:4000/search", data)
+      .post("https://ecommerse-5jkm.onrender.com/search", data)
       .then((response) => {
         setdata(response.data.data);
         console.log(response.data.data);
@@ -44,9 +45,10 @@ function Cart() {
     // Reset the name state to an empty string when a link is clicked
     setname("");
   };
-  const deletetokken=()=>{
-    localStorage.removeItem("token")
-  }
+  const handletoken = () => {
+    localStorage.removeItem("token");
+    localStorage.removeItem("userid");
+  };
 
   return (
     <div>
@@ -86,10 +88,13 @@ function Cart() {
             ) : null}
           </div>
           <Link to={"/login"}>
-            <button className="btn btn-outline-success">Login</button>
-          </Link>
-          <Link >
-            <button className="btn btn-outline-success" onClick={deletetokken}>Logout</button>
+            <button className="btn btn-outline-success login">
+              {token ? ( // Check if token is in local storage
+                <Link onClick={handletoken}>Logout</Link>
+              ) : (
+                <Link to="/login">Login</Link>
+              )}
+            </button>
           </Link>
           <Link to={"/order"}>
             <i className="fa-solid fa-cart-shopping fa-2xl"></i>

@@ -1,0 +1,114 @@
+[33mcommit 25c21d1b3f87fe2a00165d467ec73d98a4af12cd[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Merge: a40db7f dd79be2
+Author: sumitpahadi <sumitrawat1102000@gmail.com>
+Date:   Sat Oct 14 18:00:27 2023 +0530
+
+    Merge branch 'main' of https://github.com/sumitpahadi/ecommerse-website
+
+[33mcommit a40db7f805b85ef93594fc27ad0c22e87b8c15a6[m
+Author: sumitpahadi <sumitrawat1102000@gmail.com>
+Date:   Sat Oct 14 18:00:03 2023 +0530
+
+    delete tokken
+
+[33mcommit dd79be2bfdbaca42826f990302d45dde9d7e7194[m
+Author: sumitpahadi <120160553+sumitpahadi@users.noreply.github.com>
+Date:   Fri Oct 13 20:47:30 2023 +0530
+
+    Delete backend/.env
+
+[33mcommit 0d3de9d1089606d00a5fcbab78dc9012ed59e5e3[m
+Author: sumitpahadi <sumitrawat1102000@gmail.com>
+Date:   Wed Oct 11 15:06:18 2023 +0530
+
+    fix dashboard
+
+[33mcommit d170c4c7da2aba81ca092e1de410bdd11c513da4[m
+Author: sumitpahadi <sumitrawat1102000@gmail.com>
+Date:   Wed Oct 11 14:44:50 2023 +0530
+
+    link fix
+
+[33mcommit c802c2866290d7e2eaa21cc576a2f4d0c561594a[m
+Author: sumitpahadi <sumitrawat1102000@gmail.com>
+Date:   Wed Oct 11 14:39:27 2023 +0530
+
+    login and signup backend
+
+[33mcommit e2c7a9da8ae867d78e59bb329613f2945b9cdced[m
+Author: sumitpahadi <sumitrawat1102000@gmail.com>
+Date:   Mon Oct 9 14:06:21 2023 +0530
+
+    fix dropdown
+
+[33mcommit b20f6d0eece49146784ec96dc03ee15c63061fd3[m
+Author: sumitpahadi <sumitrawat1102000@gmail.com>
+Date:   Mon Oct 9 13:29:28 2023 +0530
+
+    drop down
+
+[33mcommit cc044cf8cd55e183784f05992cc9baed2ed69188[m
+Author: sumitpahadi <sumitrawat1102000@gmail.com>
+Date:   Sun Oct 8 19:42:39 2023 +0530
+
+    loader complete
+
+[33mcommit e1e1e13629897c710362662c10b7a28e9a721a67[m
+Author: sumitpahadi <sumitrawat1102000@gmail.com>
+Date:   Sun Oct 8 17:16:30 2023 +0530
+
+    loader
+
+[33mcommit 54c58c86b232b38a95990854208d7081917a7f11[m
+Author: sumitpahadi <sumitrawat1102000@gmail.com>
+Date:   Sun Oct 8 13:42:23 2023 +0530
+
+    frontend complete
+
+[33mcommit 040cae292f48d1df69b5790c8d2e18936671e854[m
+Author: sumitpahadi <sumitrawat1102000@gmail.com>
+Date:   Sat Oct 7 19:53:41 2023 +0530
+
+    half complete
+
+[33mcommit 014114e775a9a6fc1dc8779b5e9a7161cdd3f389[m
+Author: sumitpahadi <sumitrawat1102000@gmail.com>
+Date:   Thu Oct 5 17:45:07 2023 +0530
+
+    fix api link
+
+[33mcommit 3a09912b2dc09877621044331044a56468695464[m
+Author: sumitpahadi <sumitrawat1102000@gmail.com>
+Date:   Thu Oct 5 17:43:47 2023 +0530
+
+    cart compelete
+
+[33mcommit 05db4738aacd47ae8b02c8b7f53ec130516db36a[m
+Author: sumitpahadi <sumitrawat1102000@gmail.com>
+Date:   Thu Oct 5 16:01:52 2023 +0530
+
+    api fix
+
+[33mcommit 8356ec2fd5bf5a57e25f082ab4a738f4b7b28cbd[m
+Author: sumitpahadi <sumitrawat1102000@gmail.com>
+Date:   Thu Oct 5 15:56:07 2023 +0530
+
+    cart compltete
+
+[33mcommit 1a9d2de17f4bad722f77a8c2ea7b946cf843ac8c[m
+Author: sumitpahadi <sumitrawat1102000@gmail.com>
+Date:   Sun Oct 1 17:59:17 2023 +0530
+
+    css fix
+
+[33mcommit 63987c42393d6dac7c18d66ea9fd23f9455cb3cb[m
+Author: sumitpahadi <sumitrawat1102000@gmail.com>
+Date:   Sun Oct 1 17:11:35 2023 +0530
+
+    api fix
+
+[33mcommit c5cd56463dac1b63ad534724fb6a2c86769e6cf3[m
+Author: sumitpahadi <sumitrawat1102000@gmail.com>
+Date:   Sun Oct 1 17:07:40 2023 +0530
+
+    first commit
