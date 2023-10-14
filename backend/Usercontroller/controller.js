@@ -1,5 +1,6 @@
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
+const productdata = require("../model/User");
 const userdata = require("../model/Usermodel");
 const secretkey = "smnfksjfherjgherjg";
 const saltnumber = 10;
@@ -56,7 +57,9 @@ const login = async (req, res) => {
     const loginpass = login.password;
     console.log(loginemail, loginpass);
 
-    res.status(200).send({ user: [loginemail, loginpass], token: token });
+    res
+      .status(200)
+      .send({ user: [loginemail, loginpass], token: token, userid: login._id });
   } catch (e) {
     res.status(500).send("error occured", e);
   }
@@ -68,4 +71,25 @@ const dashboard = (req, res) => {
   });
 };
 
-module.exports = { register, login, dashboard };
+const searchproduct = async (req, res) => {
+  try {
+    const search = req.body.search;
+    console.log(req.body.search);
+    const searching = await productdata.find({
+      Name: { $regex: new RegExp(search, "i") }, // "i" for case-insensitive search
+    });
+    console.log(search);
+    if (searching.length > 0) {
+      return res
+        .status(200)
+        .json({ success: true, msg: "Product details", data: searching });
+    } else {
+      return res.status(404).json({ msg: "No matching products found" });
+    }
+  } catch (error) {
+    console.error(error);
+    return res.status(500).json({ msg: "Internal server error" });
+  }
+};
+
+module.exports = { register, login, dashboard, searchproduct };

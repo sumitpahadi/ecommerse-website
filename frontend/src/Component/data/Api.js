@@ -3,7 +3,7 @@ import axios from "axios";
 
 import "./data.css"
 export const Contextdata = createContext();
-const url = "https://ecommerse-5jkm.onrender.com/getdata";
+const url = "http://localhost:4000/getdata";
 
 function Api({ children }) {
   const [data, setData] = useState([]);

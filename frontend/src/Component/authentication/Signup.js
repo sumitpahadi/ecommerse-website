@@ -21,7 +21,7 @@ function Signup() {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("https://ecommerse-5jkm.onrender.com/register", formData)
+      .post("http://localhost:4000/register", formData)
       .then((response) => {
         if (response.data.user) {
           setFormData({

@@ -22,16 +22,17 @@ function Login() {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("https://ecommerse-5jkm.onrender.com/login", formData)
+      .post("http://localhost:4000/login", formData)
       .then((response) => {
         if (response.data.user) {
           const token = response.data.token;
           console.log(token);
+          const usersid = response.data.userid;
           localStorage.setItem("token", token);
-          nav("/")
+          localStorage.setItem("userid", usersid);
+          nav("/");
         } else {
           setdata(response.data.msg);
-       
         }
       })
       .catch((error) => {

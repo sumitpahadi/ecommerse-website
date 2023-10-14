@@ -5,7 +5,12 @@ import empty from "../assests/emptycart.webp";
 
 function Order() {
   const select = useSelector((state) => state.cart.data);
+  const userid = localStorage.getItem("userid");
+
   const dispatch = useDispatch(); // Initialize dispatch
+
+  // Filter the items based on user_id
+  const filteredItems = select.filter((item) => item.user_id === userid);
 
   const handleIncrement = (index) => {
     dispatch(increment(index));
@@ -31,7 +36,7 @@ function Order() {
     return price;
   };
 
-  const totalAmount = select.reduce(
+  const totalAmount = filteredItems.reduce(
     (total, item) => total + pricecal(item.price) * item.quantity,
     0
   );
@@ -39,8 +44,8 @@ function Order() {
   return (
     <div className="parent-cont">
       <div className="child-cont">
-        {select && select.length > 0 ? (
-          select.map((item, index) => (
+        {filteredItems && filteredItems.length > 0 ? (
+          filteredItems.map((item, index) => (
             <div key={index} className="container">
               <div className="first-cont">
                 <img src={item.image} alt="click here" height={"200px"} />
@@ -78,7 +83,7 @@ function Order() {
           </div>
         )}
       </div>
-      {select.length > 0 && (
+      {filteredItems.length > 0 && (
         <div className="amount">
           <table>
             <tbody>
@@ -92,7 +97,7 @@ function Order() {
                 <th>Brand Name</th>
                 <th>Price</th>
               </tr>
-              {select.map((item, index) => (
+              {filteredItems.map((item, index) => (
                 <tr key={index}>
                   <td>
                     {" "}

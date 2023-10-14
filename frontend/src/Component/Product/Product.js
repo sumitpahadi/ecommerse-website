@@ -24,7 +24,7 @@ function Product() {
     console.log("Token:", token);
 
     axios
-      .get("https://ecommerse-5jkm.onrender.com/dashboard", {
+      .get("http://localhost:4000/dashboard", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -46,10 +46,16 @@ function Product() {
 
   const { id } = useParams();
 
-  const handleClick = (item) => {
+  const handleClick = (item, id) => {
+    const itemid = id;
+    const userid = localStorage.getItem("userid");
+    console.log(itemid, userid);
+
+
     if (verified) {
       dispatch(
         addtocart({
+          user_id:userid,
           id: item.ID,
           name: item.Name,
           image: item.Image,
@@ -88,7 +94,7 @@ function Product() {
                   <li>{item.Availabeoffer3}</li>
                 </ul>
                 {verified ? (
-                  <Link onClick={() => handleClick(item)}>
+                  <Link onClick={() => handleClick(item, item.ID)}>
                     <button>Add To Cart</button>
                   </Link>
                 ) : (

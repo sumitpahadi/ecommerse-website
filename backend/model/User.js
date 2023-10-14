@@ -16,7 +16,8 @@ const apiscehma = new Schema({
   Warranty: String,
   quantity: Number,
   category: String,
-  brandname:String
+  brandname:String,
+  
 });
 
 module.exports = mongoose.model("api", apiscehma);

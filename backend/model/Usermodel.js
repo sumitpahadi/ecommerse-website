@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
-
+const product=require('./User')
 const userdataSchema = new Schema({
   username: {
     type: String,
@@ -22,6 +22,7 @@ const userdataSchema = new Schema({
     trim: true,
     minlength: [8, "password should be atleast 8 character"],
   },
+
 });
 
 module.exports = mongoose.model("Userdata", userdataSchema);
