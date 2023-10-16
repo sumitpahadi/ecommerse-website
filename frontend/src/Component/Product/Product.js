@@ -51,11 +51,10 @@ function Product() {
     const userid = localStorage.getItem("userid");
     console.log(itemid, userid);
 
-
     if (verified) {
       dispatch(
         addtocart({
-          user_id:userid,
+          user_id: userid,
           id: item.ID,
           name: item.Name,
           image: item.Image,

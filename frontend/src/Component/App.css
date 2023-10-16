@@ -137,25 +137,21 @@ footer div ul a {
   margin-bottom: 0px;
 }
 .navbar-expand-lg .navbar-nav .nav-link {
- 
   padding-right: var(--bs-navbar-nav-link-padding-x);
   padding-left: var(--bs-navbar-nav-link-padding-x);
   font-size: 20px;
- 
+
   color: white;
- 
 }
-.navbar-expand-lg{
-  background-color: #232F3E;
- 
+.navbar-expand-lg {
+  background-color: #232f3e;
 }
 
-.fa-bars{
+.fa-bars {
   color: white;
   font-size: 27px;
   margin-top: 13px;
 }
-
 
 .slider {
   margin: 0 20px;
@@ -294,7 +290,7 @@ sup {
   width: 100px;
   background-color: black;
   background-color: rgb(255, 63, 108);
-  border: 2px solid   rgb(255, 63, 108);
+  border: 2px solid rgb(255, 63, 108);
   color: white;
   justify-content: center;
 
@@ -317,7 +313,7 @@ sup {
   height: 32px;
   margin-top: 7px;
   background-color: rgb(255, 63, 108);
-  border: 2px solid   rgb(255, 63, 108);
+  border: 2px solid rgb(255, 63, 108);
   color: white;
 }
 .amount {
@@ -329,12 +325,14 @@ sup {
 tr {
   padding-bottom: 10px;
 }
-.amount h1 {
+.amount button {
   margin-top: 10px;
   background-color: rgb(255, 63, 108);
   color: white;
-
- 
+  height: 54px;
+  width: 100%;
+  border: 2px solid rgb(255, 63, 108);
+  font-size: x-large;
   text-align: center;
 }
 table {
@@ -355,13 +353,14 @@ table {
   transform: scale(1.1); /* Increase the size on hover */
 }
 
-.sales{
+.sales {
   text-align: center;
   font-weight: bold;
 }
 
 @keyframes emptyCartAnimation {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0) scale(1);
   }
   50% {
@@ -388,52 +387,76 @@ table {
   font-weight: bolder;
 }
 /* -----------------------api */
-.dropdown1{
+.dropdown1 {
   display: flex;
 }
 
-.nav-item2{
+.nav-item2 {
   display: none;
 }
 
-
-
-
-
 /* -------------------login and logout render----- */
 
-.login a{
+.login a {
   text-decoration: none;
   color: black;
   font-weight: bold;
 }
 
-
 /* ------------------------------------styling the seacrch bar------------------------ */
-.input-group1{
+.input-group1 {
   display: flex;
   flex-direction: column;
 }
-.list{
+.list {
   background-color: white;
   color: #131921;
   position: absolute;
   z-index: 23;
 
   margin-top: 46px;
-  
-  
 }
-.list ul{
+.list ul {
   list-style: none;
   width: 100%;
 }
-.list ul a{
+.list ul a {
   text-decoration: none;
   color: black;
- 
+
   word-wrap: break-word;
 }
+
+/* -----------------------------sucess-------------- */
+
+
+/* In your App.css or a separate CSS file */
+.success-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  background-color: #f2f2f2;
+}
+
+.success-image {
+  width: 200px;
+  height: 80%;
+  width: 50%;
+  
+  animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+
 @media screen and (max-width: 753px) and (min-width: 300px) {
   #carouselExampleAutoplaying .carousel-inner .carousel-item img {
     height: 300px;
@@ -486,24 +509,14 @@ table {
   .logo {
     display: block;
   }
-
 }
 
-@media screen and (max-width: 1000px)  {
-  .nav-item2{
+@media screen and (max-width: 1000px) {
+  .nav-item2 {
     display: block;
   }
-  
-  .nav-item3{
+
+  .nav-item3 {
     display: none;
   }
-
-  
 }
-
-
-
-
-
-
-

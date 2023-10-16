@@ -12,6 +12,8 @@ import Login from "../authentication/Login";
 import Signup from "../authentication/Signup";
 import Navbar from "../pages/Navbar";
 import Footer from "../Footer/Footer";
+import Success from "../pages/Success";
+import Cancel from "../pages/Cancel";
 
 function Routing() {
   const navigate = useNavigate();
@@ -35,6 +37,8 @@ function Routing() {
           <Route path="/order" element={<Order />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
+          <Route path="/sucess" element={<Success />} />
+          <Route path="/cancel" element={<Cancel />} />
         </Routes>
         {shouldShowNavbarAndFooter() && <Footer />}
       </Api>

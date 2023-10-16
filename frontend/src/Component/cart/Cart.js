@@ -11,17 +11,14 @@ function Cart() {
   const filteredItems = select.filter((item) => item.user_id === userid);
   const [data1, setdata] = useState([]);
   const token = localStorage.getItem("token");
-
   useEffect(() => {
     if (name === "") {
       setdata([]);
       return;
     }
-
     const data = {
       search: name,
     };
-
     axios
       .post("https://ecommerse-5jkm.onrender.com/search", data)
       .then((response) => {
