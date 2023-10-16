@@ -429,7 +429,6 @@ table {
 
 /* -----------------------------sucess-------------- */
 
-
 /* In your App.css or a separate CSS file */
 .success-container {
   display: flex;
@@ -440,10 +439,9 @@ table {
 }
 
 .success-image {
-  width: 200px;
-  height: 80%;
-  width: 50%;
-  
+  height: 250px;
+  width: 250px;
+
   animation: bounce 1s infinite alternate;
 }
 
@@ -455,7 +453,6 @@ table {
     transform: translateY(-20px);
   }
 }
-
 
 @media screen and (max-width: 753px) and (min-width: 300px) {
   #carouselExampleAutoplaying .carousel-inner .carousel-item img {
