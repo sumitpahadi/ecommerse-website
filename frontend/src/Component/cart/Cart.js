@@ -40,7 +40,6 @@ function Cart() {
   };
 
   const handleLinkClick = () => {
-    // Reset the name state to an empty string when a link is clicked
     setname("");
   };
   // const handletoken = () => {
@@ -88,10 +87,13 @@ function Cart() {
           </div>
 
           <Link style={{ display: "flex" }}>
-            
-           
-              {username ? <div className="username"><h4>{username}</h4></div> :<i className="fa-regular fa-user fa-2xl"></i>}
-          
+            {username ? (
+              <div className="username">
+                <h4>{username}</h4>
+              </div>
+            ) : (
+              <i className="fa-regular fa-user fa-2xl"></i>
+            )}
           </Link>
 
           <Link to={"/order"}>

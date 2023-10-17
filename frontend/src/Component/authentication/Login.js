@@ -35,7 +35,7 @@ function Login() {
           const username = email.split("@")[0].match(/[a-zA-Z]+/)[0].split("")[0];
 
           console.log(username);
-          localStorage.setItem("username", username);
+          localStorage.setItem("username", username.toUpperCase());
 
           nav("/");
         } else {
