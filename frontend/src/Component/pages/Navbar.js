@@ -10,19 +10,27 @@ function Navbar() {
   const data1 = useContext(Contextdata);
   console.log(data1);
 
+  const token = localStorage.getItem("token");
+  const username = localStorage.getItem("username");
+  const userid = localStorage.getItem("userid");
+
   const [menuOpen, setMenuOpen] = useState(false);
 
   // Function to close the menu
   const closeMenu = () => {
     setMenuOpen(false);
   };
-
+  const handletoken = () => {
+    localStorage.removeItem("token");
+    localStorage.removeItem("userid");
+    localStorage.removeItem("username");
+  };
   return (
     <>
       <Cart />
       <nav className="navbar navbar-expand-lg  " id="postion">
         <div className="container-fluid">
-          <Link className="nav-link " onClick={closeMenu}>
+          <Link className="nav-link " onClick={closeMenu} to={"/"}>
             <img
               src={logo}
               alt=""
@@ -54,10 +62,60 @@ function Navbar() {
                   Home
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link" to={"/mobile"} onClick={closeMenu}>
-                  Mobile
-                </Link>
+              <li className="nav-item3">
+                <div className="dropdown dropdown1">
+                  <Link
+                    className="btn  dropdown-toggle nav-link"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Molbile
+                  </Link>
+                  <ul className="dropdown-menu">
+                    <li>
+                      <Link
+                        className="dropdown-item"
+                        to={"/Mobile/" + "all"}
+                        onClick={closeMenu}
+                      >
+                        All
+                      </Link>
+                    </li>
+                    <li>
+                      {data1
+                        .filter((item) => item.ID === 2)
+                        .map((item, index) => {
+                          return (
+                            <Link
+                              key={index}
+                              className="dropdown-item"
+                              to={"/Mobile/" + item.brandname}
+                              onClick={closeMenu}
+                            >
+                              Iphone
+                            </Link>
+                          );
+                        })}
+                    </li>
+                    <li>
+                      {data1
+                        .filter((item) => item.ID === 1)
+                        .map((item, index) => {
+                          return (
+                            <Link
+                              key={index}
+                              className="dropdown-item"
+                              to={"/Mobile/" + item.brandname}
+                              onClick={closeMenu}
+                            >
+                              Android
+                            </Link>
+                          );
+                        })}
+                    </li>
+                  </ul>
+                </div>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to={"/tablet"} onClick={closeMenu}>
@@ -68,18 +126,19 @@ function Navbar() {
                 <div className="dropdown dropdown1">
                   <Link
                     className="btn  dropdown-toggle nav-link"
-                    to={"/laptop"}
                     type="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
-                    onClick={closeMenu}
                   >
                     Laptop
                   </Link>
-
                   <ul className="dropdown-menu">
                     <li>
-                      <Link className="dropdown-item" to={"/laptop/"+"all"}>
+                      <Link
+                        className="dropdown-item"
+                        to={"/laptop/" + "all"}
+                        onClick={closeMenu}
+                      >
                         All
                       </Link>
                     </li>
@@ -88,9 +147,11 @@ function Navbar() {
                         .filter((item) => item.ID === 23)
                         .map((item, index) => {
                           return (
-                            <Link key={index}
+                            <Link
+                              key={index}
                               className="dropdown-item"
                               to={"/laptop/" + item.brandname}
+                              onClick={closeMenu}
                             >
                               Mac Book
                             </Link>
@@ -102,9 +163,11 @@ function Navbar() {
                         .filter((item) => item.ID === 32)
                         .map((item, index) => {
                           return (
-                            <Link key={index}
+                            <Link
+                              key={index}
                               className="dropdown-item"
                               to={"/laptop/" + item.brandname}
+                              onClick={closeMenu}
                             >
                               Window
                             </Link>
@@ -114,7 +177,7 @@ function Navbar() {
                   </ul>
                 </div>
               </li>
-              <li className="nav-item2">
+              {/* <li className="nav-item2">
                 <Link
                   className="nav-link"
                   to={"/laptop/" + "all"}
@@ -122,7 +185,7 @@ function Navbar() {
                 >
                   Laptop
                 </Link>
-              </li>
+              </li> */}
 
               <li className="nav-item">
                 <Link
@@ -131,6 +194,21 @@ function Navbar() {
                   onClick={closeMenu}
                 >
                   Accessories
+                </Link>
+              </li>
+
+              {/* ----login- */}
+              <li className="nav-item">
+                <Link className="nav-link">
+                  <Link>
+                    <button className="btn btn-outline-success login">
+                      {token ? ( // Check if token is in local storage
+                        <Link onClick={handletoken}>Logout</Link>
+                      ) : (
+                        <Link to="/login">Login</Link>
+                      )}
+                    </button>
+                  </Link>
                 </Link>
               </li>
             </ul>

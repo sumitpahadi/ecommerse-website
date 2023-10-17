@@ -11,6 +11,7 @@ function Cart() {
   const filteredItems = select.filter((item) => item.user_id === userid);
   const [data1, setdata] = useState([]);
   const token = localStorage.getItem("token");
+  const username = localStorage.getItem("username");
   useEffect(() => {
     if (name === "") {
       setdata([]);
@@ -42,10 +43,11 @@ function Cart() {
     // Reset the name state to an empty string when a link is clicked
     setname("");
   };
-  const handletoken = () => {
-    localStorage.removeItem("token");
-    localStorage.removeItem("userid");
-  };
+  // const handletoken = () => {
+  //   localStorage.removeItem("token");
+  //   localStorage.removeItem("userid");
+  //   localStorage.removeItem("username");
+  // };
 
   return (
     <div>
@@ -75,7 +77,7 @@ function Cart() {
                   {data1.map((item, index) => (
                     <Link
                       to={"/product/" + item.ID + "/" + item.category}
-                      onClick={handleLinkClick} // Call the function to reset name state
+                      onClick={handleLinkClick}
                     >
                       <li key={index}>{item.Name}</li>
                     </Link>
@@ -84,15 +86,14 @@ function Cart() {
               </div>
             ) : null}
           </div>
-          <Link to={"/login"}>
-            <button className="btn btn-outline-success login">
-              {token ? ( // Check if token is in local storage
-                <Link onClick={handletoken}>Logout</Link>
-              ) : (
-                <Link to="/login">Login</Link>
-              )}
-            </button>
+
+          <Link style={{ display: "flex" }}>
+            
+           
+              {username ? <div className="username"><h4>{username}</h4></div> :<i className="fa-regular fa-user fa-2xl"></i>}
+          
           </Link>
+
           <Link to={"/order"}>
             <i className="fa-solid fa-cart-shopping fa-2xl"></i>
           </Link>

@@ -18,6 +18,7 @@ const apiscehma = new Schema({
   category: String,
   brandname:String,
   
+  
 });
 
 module.exports = mongoose.model("api", apiscehma);

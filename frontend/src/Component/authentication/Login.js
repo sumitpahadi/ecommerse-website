@@ -30,6 +30,13 @@ function Login() {
           const usersid = response.data.userid;
           localStorage.setItem("token", token);
           localStorage.setItem("userid", usersid);
+
+          const email = response.data.user[0];
+          const username = email.split("@")[0].match(/[a-zA-Z]+/)[0].split("")[0];
+
+          console.log(username);
+          localStorage.setItem("username", username);
+
           nav("/");
         } else {
           setdata(response.data.msg);

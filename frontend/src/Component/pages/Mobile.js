@@ -2,17 +2,30 @@ import React from "react";
 import { useContext } from "react";
 import { Contextdata } from "../data/Api";
 import Mutlislder from "../Multislider/Mutlislder";
-
+import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import "../App.css";
 function Mobile() {
+  const { brandname } = useParams();
   const data1 = useContext(Contextdata);
   console.log(data1);
+
+  let filteredData;
+
+  if (brandname === "iphone") {
+    filteredData = data1.filter(item => item.brandname === brandname);
+  } else if (brandname === "android") {
+    filteredData = data1.filter(item => item.brandname === brandname);
+  } else 
+  {
+    filteredData = data1;
+  }
+
   return (
     <div>
       <div className="home">
-        {data1
-          .filter((item) => item.ID <= 20 && item.ID > 8)
+        {filteredData
+          .filter((item) => item.ID <= 20 && item.ID > 1)
           .map((item, index) => {
             return (
               <div className="mobileproduct" key={index} id="productsub">

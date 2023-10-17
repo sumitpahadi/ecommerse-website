@@ -30,7 +30,7 @@ function Routing() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/laptop/:brandname" element={<Laptop />} />
-          <Route path="/Mobile" element={<Mobile />} />
+          <Route path="/Mobile/:brandname" element={<Mobile />} />
           <Route path="/tablet" element={<Tablet />} />
           <Route path="/accessories" element={<Accessories />} />
           <Route path="/product/:id/:name" element={<Product />} />
