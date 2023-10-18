@@ -16,7 +16,7 @@ function Footer() {
               An All in one, bringing you on the best platform, knowledge and
               inspiration.
             </li>
-            <li>©2023.ClickCart. All Rights reserved</li>
+            <li>©2023.ClickCart. All Rights reserved Sumit Rawat</li>
           </ul>
         </div>
         <div>
@@ -42,13 +42,13 @@ function Footer() {
             <Link to={"/"}>
               <li>home</li>
             </Link>
-            <Link to={"/mobile"}>
+            <Link to={"/Mobile/" + "all"}>
               <li>Mobile</li>
             </Link>
             <Link to={"/tablet"}>
               <li>Tablet</li>
             </Link>
-            <Link to={"/laptop"}>
+            <Link to={"/laptop/" + "all"}>
               <li>Laptop</li>
             </Link>
             <Link to={"/accessories"}>
